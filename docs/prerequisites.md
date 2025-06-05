@@ -2,7 +2,7 @@
 layout: home
 title: Prerequisites
 nav_order: 2
-has_children: true
+has_children: false
 ---
 # Prerequisites
 
