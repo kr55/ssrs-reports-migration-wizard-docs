@@ -80,7 +80,3 @@ Click **Finish** to start the migration process.
 
 ---
 
-## Need Help?
-
-Rreach out via [Support](mailto:support@azureops.org) for more assistance.
-
