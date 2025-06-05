@@ -49,34 +49,11 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 
 ---
 
-## 🔧 System Requirements
-
-- .NET Framework 4.8 or later
-- Access to SSRS SOAP API
-- Admin or sufficient permissions on both source and destination servers
-
----
-
-## 🧭 Getting Started
-
-Just launch the wizard and follow the on-screen steps:
-
-1. Choose the source (SSRS server or SRMW file)
-2. Choose the destination
-3. Select objects to migrate using the interactive tree view
-4. Review and confirm
-5. Sit back and watch the migration in real time
-
-✅ Optionally skip the welcome screen next time for quicker access.
-
----
-
 ## 📘 Documentation
 
-- [Installation Guide](#)
-- [How Migration Works](#)
-- [FAQ](#)
-- [Troubleshooting](#)
+- [Installation Guide]()
+- [Prerequisites](https://ssrsmigrationwizard.azureops.org/docs/prerequisites.html)
+- [How Migration Works]((https://elasticjobsmanager.azureops.org/docs/installation.html))
 
 ---
 
@@ -85,7 +62,3 @@ Just launch the wizard and follow the on-screen steps:
 Your server credentials and configuration data never leave your environment. The tool performs all operations using direct API calls between your machines.
 
 ---
-
-## 📥 Download
-
-👉 [Download the latest version](#) of SSRS Reports Migration Wizard and simplify your reporting environment management today.
