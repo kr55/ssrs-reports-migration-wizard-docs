@@ -4,7 +4,7 @@ title: Prerequisites
 nav_order: 2
 has_children: true
 ---
-# Prerequisites for SSRS Reports Migration
+# Prerequisites
 
 Before using the SSRS Reports Migration Wizard, ensure the following system, network, and access requirements are fulfilled.
 
