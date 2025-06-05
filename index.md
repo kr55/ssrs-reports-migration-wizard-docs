@@ -53,7 +53,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 
 - [Installation Guide]()
 - [Prerequisites](https://ssrsmigrationwizard.azureops.org/docs/prerequisites.html)
-- [How Migration Works]((https://elasticjobsmanager.azureops.org/docs/installation.html))
+- [How Migration Works](https://ssrsmigrationwizard.azureops.org/getting-started/)
 
 ---
 
