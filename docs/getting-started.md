@@ -8,7 +8,7 @@ nav_order: 4
 # Getting started
 {: .no_toc }
 
-## Step 1: Select the Source
+## Choose source
 
 - Choose the **source type**: either an SSRS Report Server or an SRMW file.
 - Enter the **Report Server URI** (e.g., `http://localhost/ReportServer`).
@@ -21,7 +21,7 @@ nav_order: 4
 Click **Next** to proceed.
 
 
-## Step 2: Select the Target
+## Choose Target
 
 - Choose the **target type**: another SSRS Report Server or SRMW file.
 - Enter the **target server URI**.
@@ -31,7 +31,7 @@ Click **Next** to proceed.
 
 Click **Next** to continue.
 
-## Step 3: Select SSRS Items to Migrate
+## Select SSRS Items to Migrate
 
 - Browse and select specific SSRS objects (folders, reports, datasets, data sources).
 - The tool displays a **tree view** of your SSRS folder hierarchy.
@@ -49,7 +49,7 @@ Click **Next** to continue.
 Click **Next** once you’ve selected the required items.
 
 
-## Step 4: Review and Confirm
+## Review and Confirm
 
 - Review the source and target server details.
 - A detailed list of items to be updated will be shown.
@@ -60,7 +60,7 @@ Click **Next** once you’ve selected the required items.
 Click **Finish** to start the migration process.
 
 
-## Step 5: Migration Summary
+## Migration Summary
 
 - View a detailed log of all migrated items.
 - Warnings about existing folders or skipped operations will be shown.
