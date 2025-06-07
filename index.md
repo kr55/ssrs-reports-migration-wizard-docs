@@ -52,7 +52,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 
 ## 📘 Documentation
 
-- [Installation Guide]()
+- [Installation Guide](https://ssrsmigrationwizard.azureops.org/download/)
 - [Prerequisites](https://ssrsmigrationwizard.azureops.org/docs/prerequisites.html)
 - [How Migration Works](https://ssrsmigrationwizard.azureops.org/getting-started/)
 
