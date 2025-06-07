@@ -7,11 +7,13 @@ nav_order: 1
 
 # SSRS Reports Migration Wizard
 
-**Effortless, streamlined SSRS migration for administrators and developers.**
-
-The **SSRS Reports Migration Wizard** helps you migrate SQL Server Reporting Services (SSRS) content seamlessly from one server to another — or to/from an SRMW file.
+SSRS Reports Migration Wizard helps you migrate SQL Server Reporting Services (SSRS) content seamlessly from one server to another — or to/from an SRMW file.
 
 Whether you're upgrading SSRS servers, consolidating environments, or backing up your reporting assets, this tool simplifies the process with a guided, step-by-step wizard interface.
+{: .fs-6 .fw-300 }
+
+[Get started now](https://ssrsmigrationwizard.azureops.org/download/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.srmw1719){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
