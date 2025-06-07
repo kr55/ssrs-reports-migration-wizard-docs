@@ -6,15 +6,7 @@ nav_order: 3
 ---
 
 # Installation and activation
-{: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 ## How to download 
 **Visual Studio 2017/2019**
 
