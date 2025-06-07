@@ -5,8 +5,8 @@ theme: just-the-docs
 url: https://ssrsmigrationwizard.azureops.org
 
 aux_links:
-  "Activate Now":
-    - "https://azureops.org/product/azure-elastic-jobs-manager/"
+  "Download Now":
+    - "https://marketplace.visualstudio.com/items?itemName=AzureOps.srmw1719"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
