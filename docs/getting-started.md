@@ -73,6 +73,7 @@ Click **Finish** to start the migration process.
 
 - 🔒 **Stored Credentials** are not transferred. Credentials for data sources, reports, and datasets must be **manually re-entered** on the target.
 - 📬 **Standard Subscription Migration** depends on valid credentials. If credentials are missing, subscription migration will fail silently or partially.
+- It currently supports only SSRS Report server in Native mode for migrations. 
 - ✅ **Recommended Workflow**:
   1. Migrate SSRS items (folders, reports, datasets, data sources) first.
   2. Manually set credentials on the target SSRS.
