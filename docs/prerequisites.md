@@ -17,7 +17,13 @@ Before using the SSRS Reports Migration Wizard, ensure the following system, net
 - Access to both **source** and **target SSRS report servers**
 - SSRS instance version **2012 or later**
 
----
+
+## 🌐 Network Prerequisites
+
+- Ensure the SSRS server ports are open (default is **TCP 80** for HTTP).
+- Firewalls or proxies should not block access to:
+- `http://<servername>/ReportServer`
+- `http://<servername>/Reports`
 
 ## 🔗 Report Server Access Requirements
 
@@ -36,7 +42,6 @@ To connect to a Report Server, the user must have the following access:
 > - The domain account is trusted on the report server
 > - The password is valid and not expired
 
----
 
 ## 🔐 Granting Access to SSRS Report Server
 
@@ -63,14 +68,6 @@ If your user account is unable to connect or browse the server from the wizard, 
 3. Add your domain user again and assign the necessary role(s).
 
 > 🔄 If inheritance is broken, ensure you set permissions for **each subfolder** as well.
-
-
-## 🌐 Network Prerequisites
-
-- Ensure the SSRS server ports are open (default is **TCP 80** for HTTP).
-- Firewalls or proxies should not block access to:
-- `http://<servername>/ReportServer`
-- `http://<servername>/Reports`
 
 ---
 
