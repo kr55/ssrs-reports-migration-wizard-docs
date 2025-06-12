@@ -18,6 +18,16 @@ nav_order: 3
 
 <img src="../media/VS-Download17.png" width="700">
 
+**Visual Studio 2022**
+
+1. Open Visual Studio 2022. 
+2. Click on the ‘Extensions’ menu item, then select ‘Manage Extensions’.
+3. Under `Online` section, search for `SSIS Catalog Migration Wizard` and click `Download`.
+3. Once the download is done, restart Visual Studio and complete the installation.
+4. Click on the ‘Tools‘ menu item. You will see the `SSIS Cataloger` option. Click it to launch.
+
+<img src="../media/VS-Download2022.png" width="700">
+
 **SQL Server Management Studio 18**
 
 [Download Visual Studio 2017/2019 Extension](https://marketplace.visualstudio.com/items?itemName=AzureOps.elasticjobsmanager1719){: .btn .btn-purple .mr-2 }
