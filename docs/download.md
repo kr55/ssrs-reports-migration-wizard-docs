@@ -22,9 +22,9 @@ nav_order: 3
 
 1. Open Visual Studio 2022. 
 2. Click on the ‘Extensions’ menu item, then select ‘Manage Extensions’.
-3. Under `Online` section, search for `SSIS Catalog Migration Wizard` and click `Download`.
+3. Under `Online` section, search for `SSRS Reports Migration Wizard` and click `Download`.
 3. Once the download is done, restart Visual Studio and complete the installation.
-4. Click on the ‘Tools‘ menu item. You will see the `SSIS Cataloger` option. Click it to launch.
+4. Click on the ‘Tools‘ menu item. You will see the `SSRS Reports Migration Wizard` option. Click it to launch.
 
 <img src="../media/VS-Download2022.png" width="700">
 
