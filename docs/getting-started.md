@@ -8,7 +8,7 @@ nav_order: 4
 # Getting started
 {: .no_toc }
 
-## Choose source
+## Choose Source
 
 - Choose the **source type**: either an SSRS Report Server or an SRMW file.
 - Enter the **Report Server URI** (e.g., `http://localhost/ReportServer`).
