@@ -5,7 +5,7 @@ permalink: /getting-started/
 nav_order: 4
 ---
 
-# Getting started
+# Getting Started
 {: .no_toc }
 
 ## Choose Source
