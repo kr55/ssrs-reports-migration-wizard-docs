@@ -69,7 +69,7 @@ Click **Finish** to start the migration process.
 <img src="../media/finish.png" style="width:75%; height:75%">
 
 
-⚠️ **Limitations**
+# Limitations
 
 - This wizard cannot transfer **stored credentials** from reports, data sources, or datasets. You must configure credentials manually on the target server after migration.
 - If credentials are not configured, **standard subscriptions will fail to migrate properly**.
