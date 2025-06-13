@@ -54,6 +54,7 @@ Click **Next** once you’ve selected the required items.
 - Review the source and target server details.
 - A detailed list of items to be updated will be shown.
 - The summary includes folder and item-level actions.
+- if the object is already present in the target, the summary will show it as 'Update' else 'New'.
 
 <img src="../media/review.png" style="width:75%; height:75%">
 
