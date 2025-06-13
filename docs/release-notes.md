@@ -5,7 +5,7 @@ permalink: /release-notes/
 nav_order: 16
 ---
 
-# Release notes
+# Release Notes
 ## 0.0.1 (preview) (06/05/2025)
 Current
 {: .label .label-blue }
