@@ -8,15 +8,12 @@ has_children: false
 
 Before using the SSRS Reports Migration Wizard, ensure the following system, network, and access requirements are fulfilled.
 
----
-
 ## ✅ System Requirements
 
 - **Windows OS** (Windows 10 or above recommended)
 - **.NET Framework 4.7.2 or above** installed
 - Access to both **source** and **target SSRS report servers**
 - SSRS instance version **2012 or later**
-
 
 ## 🌐 Network Prerequisites
 
@@ -27,21 +24,13 @@ Before using the SSRS Reports Migration Wizard, ensure the following system, net
 
 ## 🔗 Report Server Access Requirements
 
-To connect to a Report Server, the user must have the following access:
-
-- **Browser role** or higher on the source server (read access)
-- **Publisher role** or higher on the target server (write access)
-- Access to:
-  - Folder structure
-  - Data sources
-  - Datasets
-  - Reports
-  - Subscriptions (optional)
+🧑‍💼 **Required Roles**
+- On the **source server**, your user must have at least the `Browser` role.
+- On the **target server**, you need the `Publisher` role or higher.
 
 > If connecting using domain credentials, ensure that:
 > - The domain account is trusted on the report server
 > - The password is valid and not expired
-
 
 ## 🔐 Granting Access to SSRS Report Server
 
@@ -62,14 +51,10 @@ If your user account is unable to connect or browse the server from the wizard, 
 ### On Folder-Level Permissions (if restricted):
 
 1. Navigate to the top-level folder (usually **Home**).
-
 2. Click the **ellipsis (...)** next to the folder > **Manage** > **Security**.
-
 3. Add your domain user again and assign the necessary role(s).
+🔄 If inheritance is broken, ensure you set permissions for **each subfolder** as well.
 
-> 🔄 If inheritance is broken, ensure you set permissions for **each subfolder** as well.
-
----
 
 ## Next Step
 
