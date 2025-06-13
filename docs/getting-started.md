@@ -69,16 +69,15 @@ Click **Finish** to start the migration process.
 <img src="../media/finish.png" style="width:75%; height:75%">
 
 
-## Limitations
+⚠️ **Limitations**
 
-- 🔒 **Stored Credentials** are not transferred. Credentials for data sources, reports, and datasets must be **manually re-entered** on the target.
-- 📬 **Standard Subscription Migration** depends on valid credentials. If credentials are missing, subscription migration will fail silently or partially.
-- 📬 **Data driven Subscription Migration** is not supported currently.
-- It currently supports only SSRS Report server in Native mode for migrations. 
-- ✅ **Recommended Workflow**:
-  1. Migrate SSRS items (folders, reports, datasets, data sources) first.
-  2. Manually set credentials on the target SSRS.
-  3. Rerun the wizard with only "Migrate standard subscriptions" enabled.
+- This wizard cannot transfer **stored credentials** from reports, data sources, or datasets. You must configure credentials manually on the target server after migration.
+- If credentials are not configured, **standard subscriptions will fail to migrate properly**.
+- **Data-driven subscriptions are not supported.**
+- Only **Native mode SSRS servers** are supported — **SharePoint mode is not supported**.
+✅ Recommended approach:
+1. Migrate all SSRS items first.
+2. Set credentials manually on the target server.
+3. Rerun the wizard with the "Standard Subscription Migration" option selected.
 
----
 
