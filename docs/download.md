@@ -5,9 +5,9 @@ permalink: /download/
 nav_order: 3
 ---
 
-# Installation and activation
+# Installation and Activation
 
-## How to download 
+## How to Download 
 **Visual Studio 2017/2019**
 
 1. Open Visual Studio 2017 or 2019. 
