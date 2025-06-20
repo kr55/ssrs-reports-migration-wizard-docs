@@ -58,13 +58,13 @@ Once you have ordered the product license from [azureops.org](https://azureops.o
 ## Activate License Key
 
 You will receive the license key via email. You can also find the license key at [my-accounts](https://azureops.org/my-account/view-license-keys/). 
-Launch SSIS Cataloger Installer.exe and enter the product key on the landing page screen and click on the `Activate Product` button. 
+Launch SSRS Report Migration Wizard Installer.exe and enter the product key on the landing page screen and click on the `Activate Product` button. 
 It should activate the product on the machine.
 
 
 ## Deactivate License Key (Danger)
 
-If you want to deactivate the product key, you can launch SSIS Cataloger Installer.exe and click the `Deactivate Product` button. This action is irreversible, and you cannot reactivate the product with the same product key.
+If you want to deactivate the product key, you can launch SSRS Report Migration Wizard Installer.exe and click the `Deactivate Product` button. This action is irreversible, and you cannot reactivate the product with the same product key.
 
 
 
