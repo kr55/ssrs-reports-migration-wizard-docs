@@ -5,8 +5,8 @@ theme: just-the-docs
 url: https://ssrsmigrationwizard.azureops.org
 
 aux_links:
-  "Download Now":
-    - "https://marketplace.visualstudio.com/items?itemName=AzureOps.srmw1719"
+  "Activate Now":
+    - "https://azureops.org/product/ssrs-reports-migration-wizard/"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
