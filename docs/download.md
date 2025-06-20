@@ -8,6 +8,11 @@ nav_order: 3
 # Installation and Activation
 
 ## How to Download 
+
+Once you have ordered the product license from [azureops.org](https://azureops.org/product/ssrs-reports-migration-wizard/), login to your account and navigate to [downloads](https://azureops.org/my-account/downloads/) page. Download the zip file. Alternatively, you will receive a link to download the software by email.
+
+<img src="../media/DownloadPage.png" width="700">
+
 **Visual Studio 2017/2019**
 
 1. Open Visual Studio 2017 or 2019. 
@@ -56,10 +61,13 @@ You will receive the license key via email. You can also find the license key at
 Launch SSIS Cataloger Installer.exe and enter the product key on the landing page screen and click on the `Activate Product` button. 
 It should activate the product on the machine.
 
+<img src="../media/ActivateLicense.png" width="500">
 
 ## Deactivate License Key (Danger)
 
 If you want to deactivate the product key, you can launch SSIS Cataloger Installer.exe and click the `Deactivate Product` button. This action is irreversible, and you cannot reactivate the product with the same product key.
+
+<img src="../media/DeactivateLicense.png" width="500">
 
 
 
