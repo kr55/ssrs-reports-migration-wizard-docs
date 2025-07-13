@@ -25,11 +25,11 @@ Once you have ordered the product license from [azureops.org](https://azureops.o
 1. Open Visual Studio 2017 or 2019. 
 2. Click on the ‘Tools’ menu item, then select ‘Extensions and Updates’.
 3. Under `Online` section, search for `SSRS Reports Migration Wizard` and click `Download`.
+4. Once the download is done, restart Visual Studio and complete the installation.
    
 <img src="../media/VS-Download17.png" width="700">
 
-4. Once the download is done, restart Visual Studio and complete the installation.
-5. Click on the ‘Tools‘ menu item. You will see the `SSRS Reports Migration Wizard` option. Click it to launch.
+Click on the ‘Tools‘ menu item. You will see the `SSRS Reports Migration Wizard` option. Click it to launch.
 
 <img src="../media/Launch-from-VS17 19.png" width="700">
 
@@ -38,11 +38,11 @@ Once you have ordered the product license from [azureops.org](https://azureops.o
 1. Open Visual Studio 2022. 
 2. Click on the ‘Extensions’ menu item, then select ‘Manage Extensions’.
 3. Under `Online` section, search for `SSRS Reports Migration Wizard` and click `Download`.
+4. Once the download is done, restart Visual Studio and complete the installation.
 
 <img src="../media/VS-Download2022.png" width="700">
 
-4. Once the download is done, restart Visual Studio and complete the installation.
-5. Click on the ‘Tools‘ menu item. You will see the `SSRS Reports Migration Wizard` option. Click it to launch.
+Click on the ‘Tools‘ menu item. You will see the `SSRS Reports Migration Wizard` option. Click it to launch.
 
 <img src="../media/Launch-from-VS-2022.png" width="700">
 
@@ -54,6 +54,8 @@ Once you have ordered the product license from [azureops.org](https://azureops.o
 2. Copy this folder to the location `C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Extensions`. You would need admin permissions to do this.
 3. Restart SSMS 18.
 4. You will now see the `SSRS Reports Migration Wizard` option under the Tools menu item. Click it to Launch.
+
+<img src="../media/Launch-from-ssms.png" width="700">
 
 **SQL Server Management Studio 19**
 
