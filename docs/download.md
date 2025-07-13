@@ -6,6 +6,13 @@ nav_order: 3
 ---
 
 # Installation and Activation
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## How to Download 
 
