@@ -12,7 +12,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 {: .fs-6 .fw-300 }
 
 [Get started now](https://ssrsmigrationwizard.azureops.org/download/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.srmw1719){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.srmw2022){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
