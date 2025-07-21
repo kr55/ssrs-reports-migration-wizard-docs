@@ -14,14 +14,14 @@ nav_order: 3
 1. TOC
 {:toc}
 
-## Order a license key
+## Order a License Key
 
 Unlock the full power of SSRS Reports Migration Wizard by purchasing a license key.
 The licensed version removes trial limitations and enables complete migration of your SSRS reports, datasets, data sources, and subscriptions
 
 [Get License Key](https://azureops.org/product/ssrs-reports-migration-wizard/){: .btn .btn-green .mr-2 }
 
-## Download the installer
+## Download the Installer
 
 Once you have ordered the product license from [azureops.org](https://azureops.org/product/ssrs-reports-migration-wizard/), login to your account and navigate to [downloads](https://azureops.org/my-account/downloads/) page. Download the zip file. Alternatively, you will receive a link to download the software by email.
 
