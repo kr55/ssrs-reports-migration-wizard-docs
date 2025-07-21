@@ -19,7 +19,7 @@ nav_order: 3
 Unlock the full power of SSRS Reports Migration Wizard by purchasing a license key.
 The licensed version removes trial limitations and enables complete migration of your SSRS reports, datasets, data sources, and subscriptions
 
-[Get License Key](https://azureops.org/product/ssrs-reports-migration-wizard/){: .btn .btn-purple .mr-2 }
+[Get License Key](https://azureops.org/product/ssrs-reports-migration-wizard/){: .btn .btn-green .mr-2 }
 
 ## Download the installer
 
