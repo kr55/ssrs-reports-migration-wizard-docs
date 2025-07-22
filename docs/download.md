@@ -73,6 +73,8 @@ Click on the ‘Tools‘ menu item. You will see the `SSRS Reports Migration Wiz
 3. Restart SSMS 19.
 4. You will now see the `SSRS Reports Migration Wizard` option under the Tools menu item. Click it to Launch.
 
+Follow simillar steps to install the plugin for SSMS 20/21.
+
 **Standalone Installation**
 1. Extract the file `SSRS.Reports.Migration.Wizard.vsix` content in a folder named `SSRS Reports Migration Wizard` using 7zip.
 2. Place this folder in your preferred location and double-click the `SSRS.Reports.Migration.Wizard.exe` file, to launch the application.
