@@ -10,7 +10,7 @@ Before using the SSRS Reports Migration Wizard, ensure the following system, net
 
 ## ✅ System Requirements
 
-- **Windows OS** (Windows 10 or above recommended)
+- **Windows OS** (Windows 10 or above recommended) or Windows Server.
 - **.NET Framework 4.7.2 or above** installed
 - Access to both **source** and **target SSRS report servers**
 - SSRS instance version **2012 or later**
