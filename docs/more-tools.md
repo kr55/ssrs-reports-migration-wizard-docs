@@ -2,7 +2,7 @@
 layout: page
 title: More tools
 permalink: /more-tools/
-nav_order: 7
+nav_order: 6
 ---
 
 # 🚀 More Tools by AzureOps
@@ -22,21 +22,21 @@ Easily transfer projects, environments, parameters, and references from one SSIS
 - And a lot more
 
 [Learn more](https://ssiscataloger.azureops.org/download/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.ssiscatalogerpro)){: .btn .fs-5 .mb-4 .mb-md-0 }
-  
+[View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.ssiscatalogerpro){: .btn .fs-5 .mb-4 .mb-md-0 }
+
 ---
 
 ## Azure Elastic Jobs Manager
 
-**Manage Azure SQL Elastic Jobs without writing T-SQL.**  
+**Manage Azure SQL Elastic Jobs from your desktop.**  
 A lightweight UI to configure, schedule, and monitor elastic jobs across multiple Azure SQL Databases.
 
-- Create and manage elastic jobs from your desktop
+- Create and manage elastic jobs without connecting to Azure portal
 - Visualize job history and execution results
 - Perfect for SaaS DB management at scale
 
 [Learn more](https://elasticjobsmanager.azureops.org/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.elasticjobsmanager22)){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.elasticjobsmanager22){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
