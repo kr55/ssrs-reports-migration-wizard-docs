@@ -5,7 +5,7 @@ permalink: /more-tools/
 nav_order: 6
 ---
 
-# 🚀 More Tools by AzureOps
+# More Tools by AzureOps
 
 AzureOps builds practical, focused tools to help data engineers and DBAs be more productive.  
 If you're using SSRS Reports Migration Wizard, you might also find these tools useful:
