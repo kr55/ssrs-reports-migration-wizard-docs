@@ -21,7 +21,7 @@ Easily transfer projects, environments, parameters, and references from one SSIS
 - Supports Environment, Project & Package Parameters migrations
 - And a lot more
 
-[Learn more](https://ssiscataloger.azureops.org/download/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Learn more](https://ssiscataloger.azureops.org/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.ssiscatalogerpro){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
