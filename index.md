@@ -14,7 +14,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 [Get started now](https://ssrsmigrationwizard.azureops.org/download/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View it on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AzureOps.srmw2022){: .btn .fs-5 .mb-4 .mb-md-0 }
 
----
+{% include youtubePlayer.html id="WKRrgDsvoa8" %}
 
 ## 🚀 Features at a Glance
 
