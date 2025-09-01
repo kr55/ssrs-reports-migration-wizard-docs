@@ -32,6 +32,9 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 - **Tree View Selection**:
   - Select exactly which objects to migrate
   - Visual and intuitive navigation through report folder hierarchy
+ 
+- **Update Data Source Connections:**  
+  - Optionally review and update connection strings and credentials during migration.  
 
 - **Preserve Shared References**:
   - Automatically detect and link shared datasets and data sources
