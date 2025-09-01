@@ -41,8 +41,7 @@ Click **Next** to continue.
 <img src="../media/select-report-items.png" style="width:75%; height:75%">
 
 > ⚠️ **Important Limitation:**  
-> Stored credentials from data sources, datasets, and reports **are not migrated** by this wizard.  
-> If these credentials are missing, **standard subscriptions will fail to migrate**.  
+> If credentials are missing, **standard subscriptions will fail to migrate**.  
 > **Recommendation:** First complete the SSRS item migration. Then, **manually set credentials** on the target server. After credentials are set, rerun the wizard to migrate subscriptions successfully.
 
 
