@@ -47,7 +47,7 @@ Click **Next** once you’ve selected the required items.
 
 **SSRS Reports Migration Wizard** now includes an optional step to update data source connection strings during the migration process. This is particularly useful when migrating reports and datasets from a source server to a target server that uses different connection details.
 
-## How It Works
+### How It Works
 
 1. **Fetch Credentials**  
    On the next screen, click the **Fetch Credentials** button. The wizard will scan the selected items and populate a grid with all connections that can be updated.
