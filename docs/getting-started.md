@@ -99,9 +99,5 @@ Click **Finish** to start the migration process.
 - If credentials are not configured, **standard subscriptions will fail to migrate properly**.
 - **Data-driven subscriptions are not supported.**
 - Only **Native mode SSRS servers** are supported — **SharePoint mode is not supported**.
-✅ Recommended approach:
-1. Migrate all SSRS items first.
-2. Set credentials manually on the target server.
-3. Rerun the wizard with the "Standard Subscription Migration" option selected.
 
 
