@@ -42,7 +42,6 @@ Click **Next** to continue.
 
 Click **Next** once you’ve selected the required items.
 
-
 ## Updating Data Source Connection Strings ![BETA](https://img.shields.io/badge/status-BETA-blue)
 
 SSRS Reports Migration Wizard now includes an optional step to update data source connection strings during the migration process. This is particularly useful when migrating reports and datasets from a source server to a target server that uses different connection details.
@@ -52,11 +51,11 @@ SSRS Reports Migration Wizard now includes an optional step to update data sourc
 1. **Fetch Data Sources**  
 On this screen, click the Fetch Data Sources button. The wizard will scan the selected SSRS items (from previous screen) and populate a grid with all connections that can be updated.
 
+<img src="../media/fetch-data-sources.gif" style="width:75%; height:75%">
+
 2. **View and Manage Connections**  
 The grid displays the Extension, Connection String, and Credential Retrieval method for each data source. Click the Edit link in the "Manage" column, which allows you to modify the connection.
 **Convert to shared data sources if connection exists** - If this option is selected, the wizard will attempt to convert embedded data sources in reports to shared data sources during deployment, provided a shared data source with the same connection details is available in the selected SSRS items for deployment.
-
-<img src="../media/fetch-data-sources.gif" style="width:75%; height:75%">
      
 4. **Update Properties**  
     When you click **edit**, a new dialog box appears (labeled "Manage Connection Properties"). Here you can:
