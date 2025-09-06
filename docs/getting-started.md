@@ -52,7 +52,7 @@ Click **Next** once you’ve selected the required items.
 1. **Fetch Data Sources**  
    On the next screen, click the **Fetch Data Sources** button. The wizard will scan the selected items and populate a grid with all connections that can be updated.
 
-   <img src="../media/fetch-data-sources.gif" style="width:75%; height:75%">
+<img src="../media/fetch-data-sources.gif" style="width:75%; height:75%">
 
 3. **View and Manage Connections**  
    The grid displays the *Extension*, *Connection String*, and *Credential Retrieval* method for each data source.  
@@ -64,7 +64,7 @@ Click **Next** once you’ve selected the required items.
    - Specify new credentials (e.g., Windows credentials or a user name and password)  
    - Save the changes
   
-       <img src="../media/update-connection-string.png" style="width:75%; height:75%">    
+    <img src="../media/update-connection-string.png" style="width:75%; height:75%">    
 
 ### Important Notes
 - The *Dependent Objects* shown in the grid are those that have a connection embedded within them. These objects are directly using this connection.
