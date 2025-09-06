@@ -58,8 +58,6 @@ Click **Next** once you’ve selected the required items.
    The grid displays the *Extension*, *Connection String*, and *Credential Retrieval* method for each data source.  
    - Click **edit** link, which allows you to modify the connection.
   
-    <img src="../media/select-connection-string.png" style="width:75%; height:75%">    
-
 4. **Update Properties**  
    When you click **edit**, a new dialog box appears. Here you can:  
    - Review and update the original connection string  
