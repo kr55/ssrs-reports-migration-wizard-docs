@@ -54,10 +54,10 @@ On this screen, click the Fetch Data Sources button. The wizard will scan the se
 <img src="../media/fetch-data-sources.gif" style="width:75%; height:75%">
 
 2. **View and Manage Connections**  
-The grid displays the Extension, Connection String, and Credential Retrieval method for each data source. Click the Edit link in the "Manage" column, which allows you to modify the connection.
+The grid displays the Extension, Connection String, and Credential Retrieval method for each data source. Click the "edit" link in the "Manage" column, which allows you to modify the connection.
 **Convert to shared data sources if connection exists** - If this option is selected, the wizard will attempt to convert embedded data sources in reports to shared data sources during deployment, provided a shared data source with the same connection details is available in the selected SSRS items for deployment.
      
-4. **Update Properties**  
+3. **Update Properties**  
     When you click **edit**, a new dialog box appears (labeled "Manage Connection Properties"). Here you can:
    - Review the Shared Data Source(s) using this connection and Report(s) using this connection as an embedded data source.
    - Modify the Connection String.
