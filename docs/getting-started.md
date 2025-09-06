@@ -76,10 +76,11 @@ Optionally, check the box to "Try to convert report's embedded data sources refe
 
 ## Review and Confirm
 
-- Review the source and target server details.
-- A detailed list of items to be updated will be shown.
-- The summary includes folder and item-level actions.
-- if the object is already present in the target, the summary will show it as 'Update' else 'New'.
+### Before You Migrate (Checklist)
+- Selected source and target correctly
+- Chosen all intended SSRS items (reports, data sources, datasets, subscriptions)
+- (Optional – BETA) Updated connection strings and provided credentials, if necessary
+- Reviewed migration summary for “New” vs “Update” items  
 
 <img src="../media/review.png" style="width:75%; height:75%">
 
