@@ -64,7 +64,7 @@ The grid displays the Extension, Connection String, and Credential Retrieval met
    - Specify Credentials (e.g., Windows credentials or a user name and password) under "Log into the data source".
    - Click Save to apply the changes.
 
-    <img src="../media/update-connection-string.png" style="width:75%; height:75%">    
+  <img src="../media/update-connection-string.png" style="width:75%; height:75%">    
 
 ### Important Notes
 - The SSRS Reports Migration Wizard cannot retrieve passwords from embedded data sources on the source server. It is therefore essential to manually manage and input the connection strings with their corresponding passwords on this screen.
