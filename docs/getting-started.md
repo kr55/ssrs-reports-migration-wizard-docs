@@ -49,19 +49,19 @@ Click **Next** once you’ve selected the required items.
 
 ### How It Works
 
-1. **Fetch Credentials**  
-   On the next screen, click the **Fetch Credentials** button. The wizard will scan the selected items and populate a grid with all connections that can be updated.
+1. **Fetch Data Sources**  
+   On the next screen, click the **Fetch Data Sources** button. The wizard will scan the selected items and populate a grid with all connections that can be updated.
 
-   <img src="../media/fetch-credentials.png" style="width:75%; height:75%">
+   <img src="../media/fetch-data-sources.gif" style="width:75%; height:75%">
 
 3. **View and Manage Connections**  
    The grid displays the *Extension*, *Connection String*, and *Credential Retrieval* method for each data source.  
-   - All columns in the grid are **read-only** except for the **Manage** link, which allows you to modify the connection.
+   - Click **edit** link, which allows you to modify the connection.
   
     <img src="../media/select-connection-string.png" style="width:75%; height:75%">    
 
 4. **Update Properties**  
-   When you click **Manage**, a new dialog box appears. Here you can:  
+   When you click **edit**, a new dialog box appears. Here you can:  
    - Review and update the original connection string  
    - Specify new credentials (e.g., Windows credentials or a user name and password)  
    - Save the changes
