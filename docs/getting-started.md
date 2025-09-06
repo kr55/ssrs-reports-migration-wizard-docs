@@ -86,7 +86,6 @@ Optionally, check the box to "Try to convert report's embedded data sources refe
 
 Click **Finish** to start the migration process.
 
-
 ## Migration Summary
 
 - View a detailed log of all migrated items.
@@ -94,7 +93,6 @@ Click **Finish** to start the migration process.
 - Click **Report** to view a full migration log or **Close** to exit the wizard.
 
 <img src="../media/finish.png" style="width:75%; height:75%">
-
 
 # Limitations
 
