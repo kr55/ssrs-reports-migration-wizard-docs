@@ -72,8 +72,6 @@ The grid displays the Extension, Connection String, and Credential Retrieval met
 - The changes you make are **not committed to the target server** until the wizard completes the migration.
 - If no connections are found for the selected items, a message box will inform you that there are no connections available for update.
 
-Optionally, check the box to "Try to convert report's embedded data sources referring to this connection to shared data sources." This is an intelligent feature of the tool that automatically updates embedded data sources to shared data sources during the migration.
-
 ## Review and Confirm
 
 ### Before You Migrate (Checklist)
