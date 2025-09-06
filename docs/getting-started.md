@@ -62,7 +62,7 @@ The grid displays the Extension, Connection String, and Credential Retrieval met
    - Review the Shared Data Source(s) using this connection and Report(s) using this connection as an embedded data source.
    - Modify the Connection String.
    - Specify Credentials (e.g., Windows credentials or a user name and password) under "Log into the data source".
-   - Click Save to apply the changes.
+   - Click **Save** to apply the changes.
 
   <img src="../media/update-connection-string.png" style="width:75%; height:75%">    
 
