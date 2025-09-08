@@ -1,6 +1,6 @@
 ---
 layout: page
-title: More tools
+title: More from AzureOps
 permalink: /more-tools/
 nav_order: 6
 ---
