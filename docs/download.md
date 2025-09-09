@@ -23,7 +23,7 @@ The licensed version removes trial limitations and enables complete migration of
 
 ## Download the Installer
 
-Once you have ordered the product license from [azureops.org](https://azureops.org/product/ssrs-reports-migration-wizard/), login to your account and navigate to [downloads](https://azureops.org/my-account/downloads/) page. Download the zip file. Alternatively, you will receive a link to download the software by email.
+ Login to your account and navigate to [downloads](https://azureops.org/my-account/downloads/) page. Download the zip file. Alternatively, you will receive a link to download the software by email.
 
 <img src="../media/DownloadPage.png" width="700">
 
