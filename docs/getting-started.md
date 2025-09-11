@@ -94,7 +94,7 @@ Click **Finish** to start the migration process.
 
 # Limitations
 
-- If credentials are not configured, **standard subscriptions will fail to migrate properly**.
+- If credentials are not configured, **standard subscriptions will fail to migrate**.
 - **Data-driven subscriptions are not supported.**
 - Only **Native mode SSRS servers** are supported — **SharePoint mode is not supported**.
 
