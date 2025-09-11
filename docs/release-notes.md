@@ -9,7 +9,7 @@ nav_order: 5
 ## 1.1.0 (09/06/2025)
 Current
 {: .label .label-blue }
-1. Added option to manage data soruce connections during the migration. 
+1. Added option to manage data source connections during the migration. 
 
 ## 1.0.5 (08/25/2025)
 1. Bug fix in data source metadata transfer.
