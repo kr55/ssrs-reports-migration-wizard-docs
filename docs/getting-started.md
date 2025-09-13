@@ -55,7 +55,14 @@ On this screen, click the Fetch Data Sources button. The wizard will scan the se
 
 **View and Manage Connections**  
 The grid displays the Extension, Connection String, and Credential Retrieval method for each data source. Click the **Edit** link in the **Manage** column, which allows you to modify the connection.
-**Convert to shared data sources if connection exists** - If this option is selected, the wizard will attempt to convert embedded data sources in reports to shared data sources during deployment, provided a shared data source with the same connection details is available in the selected SSRS items for deployment.
+
+**Convert to shared data sources if connection exists** - If this option is selected, the wizard will attempt to convert embedded data sources in reports to shared data sources during deployment. A conversion will take place only if a shared data source is available in the selected SSRS items that matches on the following properties:
+  - Extension (provider type)
+  - ConnectionString
+  - CredentialRetrieval (authentication mode)
+  - Windows or database credentials (including WindowsCredentials and ImpersonateUser)
+  - UserName (when using stored credentials)
+If all these attributes align, the embedded data source will be replaced with a reference to the matching shared data source.
      
 **Update Properties**  
     When you click **Edit**, a new dialog box appears (labeled "Manage Connection Properties"). Here you can:
