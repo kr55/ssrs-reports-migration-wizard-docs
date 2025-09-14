@@ -6,9 +6,13 @@ nav_order: 5
 ---
 
 # Release Notes
-## 1.1.0 (09/06/2025)
+## 1.1.1 (09/13/2025)
 Current
 {: .label .label-blue }
+1. Added support for Prompt AuthenticationRetrival option in data source update screen.
+2. Bug fixes.
+
+## 1.1.0 (09/06/2025)
 1. Added option to manage data source connections during the migration. 
 
 ## 1.0.5 (08/25/2025)
