@@ -47,10 +47,10 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 ## 📦 Use Cases
 
 - Moving reports from development to production
+- Updating data sources, datasets, and reports in place (on the same server)
 - Backing up reports, datasets, and subscriptions
 - Migrating to a new SSRS instance after server upgrades
 - Sharing report packages across teams
-- Updating data sources, datasets, and reports in place (on the same server)
 
 ---
 
