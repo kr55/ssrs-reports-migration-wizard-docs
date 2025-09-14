@@ -97,7 +97,6 @@ Click **Finish** to start the migration process.
 
 <img src="../media/finish.png" style="width:75%; height:75%">
 
-# Grocery (Glossary) of Terms
 
 ## Grocery (Glossary) of Terms
 
@@ -106,7 +105,7 @@ Click **Finish** to start the migration process.
 | **SRMW File**                 | A migration package created by the SSRS Reports Migration Wizard. It stores metadata about reports, datasets, data sources, subscriptions, and shared references, allowing migration without a live SSRS server. | UATserver.srmw |
 | **Shared Data Source**        | A reusable data connection in SSRS. Multiple reports and datasets can share it. Updating the shared data source automatically updates all dependent reports. | `AdventureWorks2017` |
 | **Embedded Data Source**      | A data connection defined inside a single report or dataset. Not reusable. Can be converted into a shared data source during migration if a matching one exists. | `Company Sales` report using `AdventureWorks` connection |
-| **Dependent Objects**         | SSRS items (reports, datasets, etc.) that use a specific data source. | `Company Sales`, `Customer Internet Sales` listed under **Report(s) using this connection** |
+| **Dependent Objects**         | SSRS items (reports, datasets, etc.) that use a specific data source. | `Company Sales`, `Customer Internet Sales` |
 | **Connection String**         | Defines the database server and catalog that SSRS connects to. | `Data Source=sqldev.ud3d.com,1113;Initial Catalog=AdventureWorks2017` |
 | **Credential Retrieval**      | Defines how SSRS gets credentials for connecting to the database: <br>• **None** – no credentials provided <br>• **Integrated** – uses current Windows identity <br>• **Store** – uses stored username/password <br>• **Prompt** – asks user at runtime. | Store |
 | **Windows Credentials**       | A flag indicating if the stored credentials are Windows domain credentials (e.g., `DOMAIN\User`) instead of SQL/database credentials. | False (Database user name and password) |
