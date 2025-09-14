@@ -67,7 +67,7 @@ The grid displays the Extension, Connection String, and Credential Retrieval met
 
   <img src="../media/update-connection-string.png" style="width:75%; height:75%">    
 
-### Important Notes
+{: .note }  
 - The SSRS Reports Migration Wizard cannot retrieve passwords from embedded data sources on the source server. It is therefore essential to manually manage and input the connection strings with their corresponding passwords on this screen.
 - The *Dependent Objects* shown in the grid are those that have a connection embedded within them. These objects are directly using this connection.
 - The changes you make are **not committed to the target server** until the wizard completes the migration.
