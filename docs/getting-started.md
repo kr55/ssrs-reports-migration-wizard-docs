@@ -99,18 +99,21 @@ Click **Finish** to start the migration process.
 
 # Grocery (Glossary) of Terms
 
-| Term                          | Meaning |
-|-------------------------------|---------|
-| **SRMW File**                 | A migration package created by the SSRS Reports Migration Wizard. It stores metadata about reports, datasets, data sources, subscriptions, and shared references, allowing migration without a live SSRS server. |
-| **Shared Data Source**        | A reusable data connection in SSRS. Multiple reports and datasets can share it. Updating the shared data source automatically updates all dependent reports. |
-| **Embedded Data Source**      | A data connection defined inside a single report or dataset. Not reusable. Can be converted into a shared data source during migration if a matching one exists. |
-| **Dependent Objects**         | SSRS items (reports, datasets, etc.) that use a specific data source. Example: a report with an embedded connection is dependent on that connection. |
-| **Credential Retrieval**      | Defines how SSRS gets credentials for connecting to the database: <br>• **None** – no credentials provided <br>• **Integrated** – uses current Windows identity <br>• **Store** – uses stored username/password <br>• **Prompt** – asks user at runtime. |
-| **Windows Credentials**       | A flag indicating if the stored credentials are Windows domain credentials (e.g., `DOMAIN\User`) instead of SQL/database credentials. |
-| **Impersonate User**          | Tells SSRS to impersonate the specified user when connecting to the data source (usually with Windows credentials). |
-| **UseOriginalConnectString**  | Controls whether to keep the original connection string when migrating/deploying. If `True`, the original value is used; if `False`, the updated value is used. |
-| **OriginalConnectStringExpressionBased** | Indicates whether the original connection string was an expression (dynamic, e.g., `=Parameters!ServerName.Value`) instead of a fixed string. |
-| **Subscription**              | A scheduled task that delivers reports automatically. <br>• **Standard Subscription** – uses fixed parameters/credentials. <br>• **Data-Driven Subscription** – dynamic recipients, parameters, and destinations (not supported by this wizard). |
+## Grocery (Glossary) of Terms
+
+| Term                          | Meaning | Example |
+|-------------------------------|---------|---------------------------|
+| **SRMW File**                 | A migration package created by the SSRS Reports Migration Wizard. It stores metadata about reports, datasets, data sources, subscriptions, and shared references, allowing migration without a live SSRS server. | UATserver.srmw |
+| **Shared Data Source**        | A reusable data connection in SSRS. Multiple reports and datasets can share it. Updating the shared data source automatically updates all dependent reports. | `AdventureWorks2017` |
+| **Embedded Data Source**      | A data connection defined inside a single report or dataset. Not reusable. Can be converted into a shared data source during migration if a matching one exists. | `Company Sales` report using `AdventureWorks` connection |
+| **Dependent Objects**         | SSRS items (reports, datasets, etc.) that use a specific data source. | `Company Sales`, `Customer Internet Sales` listed under **Report(s) using this connection** |
+| **Connection String**         | Defines the database server and catalog that SSRS connects to. | `Data Source=sqldev.ud3d.com,1113;Initial Catalog=AdventureWorks2017` |
+| **Credential Retrieval**      | Defines how SSRS gets credentials for connecting to the database: <br>• **None** – no credentials provided <br>• **Integrated** – uses current Windows identity <br>• **Store** – uses stored username/password <br>• **Prompt** – asks user at runtime. | Store |
+| **Windows Credentials**       | A flag indicating if the stored credentials are Windows domain credentials (e.g., `DOMAIN\User`) instead of SQL/database credentials. | False (Database user name and password) |
+| **Impersonate User**          | Tells SSRS to impersonate the specified user when connecting to the data source (usually with Windows credentials). | False |
+| **UseOriginalConnectString**  | Controls whether to keep the original connection string when migrating/deploying. If `True`, the original value is used; if `False`, the updated value is used. | True |
+| **OriginalConnectStringExpressionBased** | Indicates whether the original connection string was an expression instead of a fixed string. |   `=Parameters!ServerName.Value`|
+| **Subscription**              | A scheduled task that delivers reports automatically. <br>• **Standard Subscription** – uses fixed parameters/credentials. <br>• **Data-Driven Subscription** – dynamic recipients, parameters, and destinations (not supported by this wizard). |  |
 
 
 # Limitations
