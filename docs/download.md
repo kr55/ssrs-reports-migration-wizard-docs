@@ -47,6 +47,8 @@ It should activate the product on the machine.
 
 If you want to deactivate the product key, you can launch SSRS Report Migration Wizard Installer.exe and click the `Deactivate Product` button. This action is irreversible, and you cannot reactivate the product with the same product key.
 
+<img src="../media/DeactivateProduct.jpg" width="500">
+
 ## Manual Installation from Visual Studio Marketplace
 
 **Visual Studio 2017/2019**
@@ -101,5 +103,5 @@ Follow simillar steps to install the plugin for SSMS 20/21.
 1. Extract the file `SSRS.Reports.Migration.Wizard.vsix` content in a folder named `SSRS Reports Migration Wizard` using 7zip.
 2. Place this folder in your preferred location and double-click the `SSRS.Reports.Migration.Wizard.exe` file, to launch the application.
 
-<img src="../media/DeactivateProduct.jpg" width="500">
+
 
