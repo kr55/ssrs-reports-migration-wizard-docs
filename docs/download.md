@@ -27,6 +27,28 @@ The licensed version removes trial limitations and enables complete migration of
 
 <img src="../media/DownloadPage.png" width="700">
 
+## Choose an Installation Target
+
+1. Launch SSRS Report Migration Wizard Installer.exe and click Next.
+2. Choose the installation target from SQL Server Management Studio (SSMS), Visual Studio or Standalone installation.
+3. Click Install
+
+<img src="../media/choose-installation-target.png" width="500">
+
+## Activate License Key
+
+You will receive the license key via email. You can also find the license key at [my-accounts](https://azureops.org/my-account/view-license-keys/). 
+Launch SSRS Report Migration Wizard Installer.exe and enter the product key on the landing page screen and click on the `Activate Product` button. 
+It should activate the product on the machine.
+
+<img src="../media/ActivateProduct.jpg" width="500">
+
+## Deactivate License Key (Danger)
+
+If you want to deactivate the product key, you can launch SSRS Report Migration Wizard Installer.exe and click the `Deactivate Product` button. This action is irreversible, and you cannot reactivate the product with the same product key.
+
+## Manual Installation from Visual Studio Marketplace
+
 **Visual Studio 2017/2019**
 
 1. Open Visual Studio 2017 or 2019. 
@@ -78,18 +100,6 @@ Follow simillar steps to install the plugin for SSMS 20/21.
 **Standalone Installation**
 1. Extract the file `SSRS.Reports.Migration.Wizard.vsix` content in a folder named `SSRS Reports Migration Wizard` using 7zip.
 2. Place this folder in your preferred location and double-click the `SSRS.Reports.Migration.Wizard.exe` file, to launch the application.
-
-## Activate License Key
-
-You will receive the license key via email. You can also find the license key at [my-accounts](https://azureops.org/my-account/view-license-keys/). 
-Launch SSRS Report Migration Wizard Installer.exe and enter the product key on the landing page screen and click on the `Activate Product` button. 
-It should activate the product on the machine.
-
-<img src="../media/ActivateProduct.jpg" width="500">
-
-## Deactivate License Key (Danger)
-
-If you want to deactivate the product key, you can launch SSRS Report Migration Wizard Installer.exe and click the `Deactivate Product` button. This action is irreversible, and you cannot reactivate the product with the same product key.
 
 <img src="../media/DeactivateProduct.jpg" width="500">
 
