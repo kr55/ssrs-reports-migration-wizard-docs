@@ -52,7 +52,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 - Backing up reports, datasets, and subscriptions
 - Migrating to a new SSRS or Power BI Report Server instance after server upgrades
 - Sharing report packages across teams
-- Managing Power BI Report Server (PBI RS) environments that host both paginated and Power BI (.pbix) reports*
+- Managing Power BI Report Server (PBI RS) environments that host SSRS items
 
 ---
 
