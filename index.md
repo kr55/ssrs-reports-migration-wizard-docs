@@ -7,7 +7,7 @@ nav_order: 1
 
 # SSRS Reports Migration Wizard
 
-SSRS Reports Migration Wizard helps you migrate SQL Server Reporting Services (SSRS Native mode) content seamlessly from one server to another or to or from an SRMW export file.
+SSRS Reports Migration Wizard helps you migrate SQL Server Reporting Services (SSRS Native mode) or Power BI Report server content seamlessly from one server to another.
 Whether you're upgrading SSRS servers, consolidating environments, or backing up your reporting assets, this tool simplifies the process with a guided, step-by-step wizard interface.
 {: .fs-6 .fw-300 }
 
@@ -25,9 +25,10 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Datasets
   - Standard Subscriptions
 
-- **Flexible Migration Targets**:
-  - From SSRS Report Server to another SSRS Report Server
-  - From or to an SRMW file
+- **Flexible Migration Source and Targets**:
+  - SSRS Report Server
+  - Power BI Report Server
+  - SRMW file
 
 - **Tree View Selection**:
   - Select exactly which objects to migrate
