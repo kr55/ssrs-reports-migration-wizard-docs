@@ -13,8 +13,6 @@ Current
 2. Bug fixes.
 
 ## 1.1.3 (09/14/2025)
-Current
-{: .label .label-blue }
 1. Added support for Prompt AuthenticationRetrival option in data source update screen.
 2. Bug fixes.
 
