@@ -37,6 +37,7 @@ Click **Next** to continue.
 - The tool displays a **tree view** of your SSRS folder hierarchy.
 - You can preview object counts by type on the right panel.
 - Optionally, check **"Migrate standard subscriptions"** to include subscriptions.
+- Optionally, check **Migrate roles** to include security roles at folder, report, dataset and datasource level.
 
 <img src="../media/select-report-items.png" style="width:75%; height:75%">
 
