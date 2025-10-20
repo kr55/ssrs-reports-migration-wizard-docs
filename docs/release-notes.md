@@ -6,6 +6,12 @@ nav_order: 5
 ---
 
 # Release Notes
+## 1.2.0 (10/20/2025)
+Current
+{: .label .label-blue }
+1. Added feature to migrate security roles at folder, dataset and data source level.
+2. Bug fixes.
+
 ## 1.1.3 (09/14/2025)
 Current
 {: .label .label-blue }
