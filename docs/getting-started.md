@@ -75,6 +75,7 @@ The grid displays the Extension, Connection String, and Credential Retrieval met
    - Review the Shared Data Source(s) using this connection and Report(s) using this connection as an embedded data source.
    - Modify the Connection String.
    - Specify Credentials (e.g., Windows credentials or a user name and password) under "Log into the data source".
+     
 If no shared data source currently exists for this connection, the dialog will allow you to add a new shared data source by specifying:
    - Name (for example, SalesDS)
    - Path (for example, /Shared Data)
