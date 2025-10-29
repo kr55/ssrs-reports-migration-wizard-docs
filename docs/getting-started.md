@@ -45,14 +45,25 @@ Click **Next** once you’ve selected the required items.
 
 ## Update Data Source Connections ![BETA](https://img.shields.io/badge/status-BETA-blue)
 
-SSRS Reports Migration Wizard now includes an optional step to update data source connection strings during the migration process. This is particularly useful when migrating reports and datasets from a source server to a target server that uses different connection details.
+The SSRS Reports Migration Wizard includes an optional step to update data source connection strings during the migration process. This is particularly useful when migrating reports and datasets from a source server to a target server that uses different connection details or data source configurations.
 
 ### How It Works
 
 **Fetch Data Sources**  
-On this screen, click the Fetch Data Sources button. The wizard will scan the selected SSRS items (from previous screen) and populate a grid with all connections that can be updated.
+On this screen, click the Fetch Data Sources button. The wizard will scan the selected SSRS items (from the previous screen) and populate a grid with all connections that can be updated.
 
-<img src="../media/fetch-data-sources.gif" style="width:75%; height:75%">
+<img src="../media/fetch-data-sources.png" style="width:75%; height:75%">
+
+Each row represents a unique connection used by your reports or shared data sources.
+
+The grid displays the following information:
+
+   - Extension – The type of data provider (e.g., SQL, OLEDB, Oracle).
+   - Connection String – The current connection string used by the data source.
+   - Credential Retrieval – Indicates the authentication method (Integrated, Store, None, or Prompt). If the method is Store, it appears in red, indicating that the password needs to be updated for this connection.
+   - Embedded DS – The number of reports using this connection as an embedded data source.
+   - Shared DS – The number of shared data sources using this connection. If this count is 0, it appears in red, indicating no existing shared data source currently uses this connection.
+   - Manage – Click Edit to view or modify the connection details.
 
 **View and Manage Connections**  
 The grid displays the Extension, Connection String, and Credential Retrieval method for each data source. Click the **Edit** link in the **Manage** column, which allows you to modify the connection.
@@ -64,12 +75,15 @@ The grid displays the Extension, Connection String, and Credential Retrieval met
    - Review the Shared Data Source(s) using this connection and Report(s) using this connection as an embedded data source.
    - Modify the Connection String.
    - Specify Credentials (e.g., Windows credentials or a user name and password) under "Log into the data source".
+If no shared data source currently exists for this connection, the dialog will allow you to add a new shared data source by specifying:
+   - Name (for example, SalesDS)
+   - Path (for example, /Shared Data)
    - Click **Save** to apply the changes.
 
   <img src="../media/update-connection-string.png" style="width:75%; height:75%">    
 
 {: .note }
-> 1. SSRS Reports Migration Wizard cannot retrieve passwords from embedded/shared data sources on the source report server. It is therefore essential to manually manage and input the connection strings with their corresponding passwords on this screen.  
+> 1. Note: The wizard cannot retrieve passwords from embedded or shared data sources on the source report server. You must manually enter the credentials where required. 
 >
 > 2. The Dependent Objects shown in the grid are those that have an embedded connection. These objects directly use this connection. During migration, their embedded data sources can be converted into shared data sources, which will then point to the data source shown on this screen. This feature (Convert to shared data sources if connection exists) is optional.
 >
