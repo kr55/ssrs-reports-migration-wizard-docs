@@ -84,7 +84,7 @@ If no shared data source currently exists for this connection, the dialog will a
   <img src="../media/update-connection-string.png" style="width:75%; height:75%">    
 
 {: .note }
-> 1. Note: The wizard cannot retrieve passwords from embedded or shared data sources on the source report server. You must manually enter the credentials where required. 
+> 1. The wizard cannot retrieve passwords from embedded or shared data sources on the source report server. You must manually enter the credentials where required. 
 >
 > 2. The Dependent Objects shown in the grid are those that have an embedded connection. These objects directly use this connection. During migration, their embedded data sources can be converted into shared data sources, which will then point to the data source shown on this screen. This feature (Convert to shared data sources if connection exists) is optional.
 >
