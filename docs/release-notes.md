@@ -10,7 +10,7 @@ nav_order: 5
 Current
 {: .label .label-blue }
 
-1. Added support for converting embedded report data sources to shared when matching shared data sources exist.
+1. Added support for converting embedded report data sources to shared.
 2. General improvements and fixes.
 
 ## 1.2.0 (10/20/2025)
