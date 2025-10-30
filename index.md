@@ -36,6 +36,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
  
 - **Update Data Source Connections:**  
   - Optionally review and update connection strings and credentials during migration
+  - Convert embedded report data sources to shared data sources
 
 - **Preserve Shared References**:
   - Automatically detect and link shared datasets and data sources
