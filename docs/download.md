@@ -27,14 +27,6 @@ The licensed version removes trial limitations and enables complete migration of
 
 <img src="../media/DownloadPage.png" width="700">
 
-## Choose an Installation Target
-
-1. Launch SSRS Report Migration Wizard Installer.exe and click Next.
-2. Choose the installation target from SQL Server Management Studio (SSMS), Visual Studio or Standalone installation.
-3. Click Install
-
-<img src="../media/choose-installation-target.png" width="500">
-
 ## Activate License Key
 
 You will receive the license key via email. You can also find the license key at [my-accounts](https://azureops.org/my-account/view-license-keys/). 
@@ -42,6 +34,14 @@ Launch SSRS Report Migration Wizard Installer.exe and enter the product key on t
 It should activate the product on the machine.
 
 <img src="../media/ActivateProduct.jpg" width="500">
+
+## Choose an Installation Target
+
+1. Launch SSRS Report Migration Wizard Installer.exe and click Next.
+2. Choose the installation target from SQL Server Management Studio (SSMS), Visual Studio or Standalone installation.
+3. Click Install
+
+<img src="../media/choose-installation-target.png" width="500">
 
 ## Manual Installation from Visual Studio Marketplace
 
