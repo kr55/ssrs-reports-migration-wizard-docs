@@ -92,8 +92,6 @@ If no shared data source currently exists for this connection, the dialog will a
 >
 > 4. If no connections are found for the selected items, a message box will inform you that there are no connections available for update.
 
-## Manage File Share Subscription Credentials (Only if File-Share subscriptions exist)
-
 ## Manage File Share Subscription Credentials
 
 If you have selected Migrate Standard Subscriptions, the wizard will automatically scan the source SSRS instance and detect subscriptions that use the File Share delivery method (i.e., exports reports to a network/shared folder).
