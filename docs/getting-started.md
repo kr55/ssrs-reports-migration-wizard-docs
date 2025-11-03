@@ -107,7 +107,8 @@ On this screen:
   - The Password column must be filled in manually
   - You may click the Subscriptions hyperlink to view reports associated with that user
 
-  <img src="../manage-file-share-subscriptions.png" style="width:75%; height:75%">    
+  <img src="../media/manage-file-share-subscriptions.png" style="width:75%; height:75%">    
+
 
 Once the credentials are entered, the wizard will apply them automatically while creating subscriptions on the target SSRS server.
 
