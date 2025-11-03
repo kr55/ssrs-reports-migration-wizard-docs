@@ -92,6 +92,28 @@ If no shared data source currently exists for this connection, the dialog will a
 >
 > 4. If no connections are found for the selected items, a message box will inform you that there are no connections available for update.
 
+## Manage File Share Subscription Credentials (Only if File-Share subscriptions exist)
+
+## Manage File Share Subscription Credentials
+
+If you have selected Migrate Standard Subscriptions, the wizard will automatically scan the source SSRS instance and detect subscriptions that use the File Share delivery method (i.e., exports reports to a network/shared folder).
+
+Since SSRS does not return stored passwords for file-share subscriptions, the wizard provides a screen to collect network credentials required to successfully recreate these subscriptions on the target server.
+
+On this screen:
+
+  - Each row represents a unique Windows account used by file-share subscriptions
+  - The shared folder path is shown for reference
+  - The Password column must be filled in manually
+  - You may click the Subscriptions hyperlink to view reports associated with that user
+
+  <img src="../manage-file-share-subscriptions.png" style="width:75%; height:75%">    
+
+Once the credentials are entered, the wizard will apply them automatically while creating subscriptions on the target SSRS server.
+
+{: .note }
+> This step is only applicable for File Share subscriptions. If your subscriptions deliver via email or other methods, this screen can be skipped.
+>
 
 ## Review and Confirm
 
