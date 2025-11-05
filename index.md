@@ -23,7 +23,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Reports
   - Data Sources
   - Datasets
-  - Standard Subscriptions
+  - Subscriptions (Standard and Data driven)
 
 - **Flexible Migration Source and Targets**:
   - SSRS Report Server
@@ -42,7 +42,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Automatically detect and link shared datasets and data sources
 
 - **Subscription Support**:
-  - Export and recreate standard SSRS subscriptions
+  - Export and recreate SSRS subscriptions
 
 ---
 
