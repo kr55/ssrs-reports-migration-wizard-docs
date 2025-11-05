@@ -6,12 +6,13 @@ nav_order: 5
 ---
 
 # Release Notes
-## 1.2.2 (11/03/2025)
+## 1.2.4 (11/05/2025)
 Current
 {: .label .label-blue }
 
 1. Added screen to manage File Share Subscription Credentials
-2. General improvements and fixes.
+2. Added support for data-driven subscriptions
+3. General improvements and fixes.
    
 ## 1.2.2 (10/30/2025)
 1. Added support for converting embedded report data sources to shared.
