@@ -149,7 +149,7 @@ Click **Finish** to start the migration process.
 | **Impersonate User**          | Tells SSRS to impersonate the specified user when connecting to the data source (usually with Windows credentials). | False |
 | **UseOriginalConnectString**  | Controls whether to keep the original connection string when migrating/deploying. If `True`, the original value is used; if `False`, the updated value is used. | True |
 | **OriginalConnectStringExpressionBased** | Indicates whether the original connection string was an expression instead of a fixed string. |   `=Parameters!ServerName.Value`|
-| **Subscription**              | A scheduled task that delivers reports automatically. <br>• **Standard Subscription** – uses fixed parameters/credentials. <br>• **Data-Driven Subscription** – dynamic recipients, parameters, and destinations (not supported by this wizard). |  |
+| **Subscription**              | A scheduled task that delivers reports automatically. <br>• **Standard Subscription** – uses fixed parameters/credentials. <br>• **Data-Driven Subscription** – dynamic recipients, parameters, and destinations. |  |
 
 
 # Limitations
