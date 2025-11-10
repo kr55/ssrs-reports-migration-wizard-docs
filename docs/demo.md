@@ -27,7 +27,7 @@ Check out these brief demonstrations to understand how **SSRS Reports Migration 
 2. Keep a version-controlled offline backup of all deployed SSRS items.  
 3. Use exported files for deployment to another report server or for documentation purposes.  
 
-{% include youtubePlayer.html id="v=Tbry_czqpBU" %}
+{% include youtubePlayer.html id="Tbry_czqpBU" %}
 
 [Learn more](https://azureops.org/articles/download-all-ssrs-reports-from-report-server/){: .btn .btn-purple .mr-2 }
 
