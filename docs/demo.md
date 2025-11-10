@@ -6,7 +6,7 @@ nav_order: 5
 ---
 
 # Demo
-Check out these brief demonstrations to understand how **SSRS Reports Migration Wizard** simplifies the migration and management of your SSRS assets across different report servers.
+Check out these brief demonstrations to understand how SSRS Reports Migration Wizard simplifies the migration and management of your SSRS assets across different report servers.
 {: .fs-6 .fw-300 }
 
 ## Migrate Reports, Datasets, and Data Sources between Report Servers
