@@ -11,7 +11,7 @@ Check out these brief demonstrations to understand how SSRS Reports Migration Wi
 
 ## Migrate Reports, Datasets, and Data Sources between Report Servers
 ### Use cases
-1. Migrate all SSRS items (Reports, Shared Datasets, Shared Data Sources) from one report server to another — on-premises or cloud-based.  
+1. Migrate all SSRS items (Folders, Reports, Shared Datasets, Shared Data Sources, Subscriptions,  Roles, etc) from one report server to another.  
 2. Maintain folder hierarchy and shared references during migration.  
 3. Handle seamless updates for shared data sources without manual intervention.  
 
