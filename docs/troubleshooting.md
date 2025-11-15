@@ -2,7 +2,7 @@
 layout: page
 title: Troubleshooting Guide
 permalink: /troubleshooting/
-nav_order: 6
+nav_order: 5
 ---
 
 # Troubleshooting Guide
