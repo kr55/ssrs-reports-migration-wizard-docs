@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Troubleshooting Guide
+title: Troubleshooting guide
 permalink: /troubleshooting/
 nav_order: 5
 ---
