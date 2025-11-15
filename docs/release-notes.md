@@ -6,10 +6,14 @@ nav_order: 5
 ---
 
 # Release Notes
-## 1.2.6 (11/06/2025)
+## 1.2.9 (11/15/2025)
 Current
 {: .label .label-blue }
 
+1. Added the ability to maximize the wizard window.
+3. General improvements and fixes.
+
+## 1.2.6 (11/06/2025)
 1. Added screen to manage File Share Subscription Credentials
 2. Added support for data-driven subscriptions
 3. General improvements and fixes.
