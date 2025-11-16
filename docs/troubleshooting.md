@@ -9,6 +9,10 @@ nav_order: 5
 
 ---
 
+# Troubleshooting Guide
+
+---
+
 ## 1. Issue: Data-Driven Subscriptions Fail to Import
 
 During the migration or import process, data-driven subscriptions may fail to be created successfully, often presenting errors related to data source connectivity.
@@ -50,11 +54,11 @@ Data-driven subscription import failures fundamentally occur because of **missin
 
 ### **Typical Causes**
 
-This failure typically occurs when a report or shared dataset is executed without a valid security context that the Reporting Services service can use to connect to the data source. This is common during migrations where Windows Integrated Security used by the original author isn't properly translated, or when subscriptions attempt to run reports that require user input credentials.
+This failure frequently blocks the successful **migration and execution of standard and data-driven subscriptions**. It occurs because the report server cannot establish a data connection using a valid, non-interactive security context. This is common when the original report was designed to prompt the user for credentials or use Windows Integrated Security, which is not supported by background processes like subscriptions.
 
 Key reasons include:
 
-* **Missing Stored Credentials:** The data source connection is configured to use credentials supplied by the user (or Windows Authentication) which are **not valid** when running background processes like subscriptions or cached report snapshots.
+* **Missing Stored Credentials (Subscription Context):** The data source connection is configured to use credentials supplied by the user (or Windows Authentication). This is **not valid** when background processes, such as **subscriptions** or cached report snapshots, attempt to run the report. The migration process fails to create the subscription if this isn't resolved.
 * **Unattended Execution Account Not Set:** The data source is configured for **No Credentials** or **Windows Integrated Security**, but the Report Server is missing the **Unattended Execution Account** configuration needed to impersonate a service account for data retrieval.
 * **Encrypted Credentials Issue:** Credentials were not successfully re-encrypted or migrated to the target Report Server environment, rendering the stored credentials invalid.
 * **Account Permissions:** The stored account has valid credentials but **lacks necessary database permissions** on the target data source.
@@ -72,4 +76,4 @@ The resolution depends on your organization's security policy for report executi
 
 ### **Summary**
 
-This error is a security-related failure indicating that the **SSRS service cannot connect to the data source** using the configured method (Stored, Integrated, or None) because a valid, non-interactive security token is missing or invalid. Configuring **Stored Credentials** for the data source is the most reliable way to resolve this issue during a migration.
+This error is a security-related failure indicating that the **SSRS service cannot connect to the data source** using the configured method (Stored, Integrated, or None) because a valid, non-interactive security token is missing or invalid. Configuring **Stored Credentials** for the data source is the most reliable way to resolve this issue during a migration and ensure subscriptions execute successfully.
