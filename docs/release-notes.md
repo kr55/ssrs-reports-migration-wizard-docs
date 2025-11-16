@@ -6,7 +6,7 @@ nav_order: 6
 ---
 
 # Release Notes
-## 1.3.0 (11/16/2025)
+## 1.3.1 (11/16/2025)
 Current
 {: .label .label-blue }
 
