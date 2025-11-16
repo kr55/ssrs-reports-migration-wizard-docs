@@ -9,10 +9,6 @@ nav_order: 5
 
 ---
 
-# Troubleshooting Guide
-
----
-
 ## 1. Issue: Data-Driven Subscriptions Fail to Import
 
 During the migration or import process, data-driven subscriptions may fail to be created successfully, often presenting errors related to data source connectivity.
