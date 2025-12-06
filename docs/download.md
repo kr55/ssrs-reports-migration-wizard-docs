@@ -58,9 +58,9 @@ Click on the ‘Tools‘ menu item. You will see the `SSRS Reports Migration Wiz
 
 <img src="../media/Launch-from-VS17 19.png" width="700">
 
-**Visual Studio 2022**
+**Visual Studio 2022/2026**
 
-1. Open Visual Studio 2022. 
+1. Open Visual Studio 2022 or 2026. 
 2. Click on the ‘Extensions’ menu item, then select ‘Manage Extensions’.
 3. Under `Online` section, search for `SSRS Reports Migration Wizard` and click `Download`.
 4. Once the download is done, restart Visual Studio and complete the installation.
