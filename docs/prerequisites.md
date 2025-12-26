@@ -12,8 +12,7 @@ Before using the SSRS Reports Migration Wizard, ensure the following system, net
 
 - **Windows OS** (Windows 10 or above recommended) or Windows Server.
 - **.NET Framework 4.7.2 or above** installed
-- Access to both **source** and **target SSRS report servers**
-- SSRS instance version **2012 or later**
+- Access to both **source** and **target SSRS / Power BI report servers**
 - **SQL Server Agent Service (Required for Subscriptions):** Ensure the **SQL Server Agent** service is running on the target SQL Server instance that hosts the ReportServer database. This is **mandatory** for migrating and executing scheduled items, including all imported data-driven and standard subscriptions.
 
 ## 🌐 Network Prerequisites
