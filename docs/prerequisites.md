@@ -39,7 +39,7 @@ If your user account is unable to connect or browse the server from the wizard, 
 ### On the SSRS Web Portal (Report Manager):
 
 1. Open your browser and navigate to the SSRS Web Portal (e.g.):http://<your-server>/Reports
-2. 2. Click on the **gear icon** ⚙️ in the top-right corner and choose **Site Settings**.
+2. Click on the **gear icon** ⚙️ in the top-right corner and choose **Site Settings**.
 3. Under **Security**, select **Add group or user**.
 4. Enter your domain user name in this format:DOMAIN\username
 5. Assign appropriate role(s):
