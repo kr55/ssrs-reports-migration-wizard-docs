@@ -23,7 +23,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Reports
   - Data Sources
   - Datasets
-  - Subscriptions (Standard and Data driven)
+  - Subscriptions (Standard and Data-driven)
   - Roles
 
 - **Flexible Migration Source and Targets**:
@@ -54,7 +54,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 - Backing up reports, datasets, and subscriptions
 - Migrating to a new SSRS or Power BI Report Server instance after server upgrades
 - Sharing report packages across teams
-- Managing Power BI Report Server (PBI RS) environments that host SSRS items
+- Managing Power BI Report Server (PBIRS) environments that host SSRS items
 
 ---
 
