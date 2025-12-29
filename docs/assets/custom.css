@@ -1,0 +1,27 @@
+/* Improve line spacing for readability */
+.md-content {
+    max-width: 1000px;
+    line-height: 1.6;
+}
+
+/* Highlight the active sidebar link */
+.md-nav__link--active {
+    font-weight: bold;
+    color: #7c4dff !important; /* Your brand purple */
+}
+
+/* Add some padding to navigation items */
+.md-nav__link {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* Style the "Activate Now" button in the header */
+.header-cta {
+    background-color: #7c4dff;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 20px;
+}
