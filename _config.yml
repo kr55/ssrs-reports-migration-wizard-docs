@@ -1,12 +1,6 @@
 title: SSRS Reports Migration Wizard
 description: Manage SSRS reports from one server to another.
-theme:
-  name: material
-  features:
-    - navigation.tabs # Adds horizontal tabs for cleaner look
-    - navigation.sections # Groups sidebar items better
-    - navigation.expand # Keeps sidebar expanded for visibility
-    - content.code.copy # Adds a copy button to code blocks
+theme: just-the-docs
 
 url: https://ssrsmigrationwizard.azureops.org
 
