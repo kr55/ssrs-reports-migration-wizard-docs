@@ -6,12 +6,16 @@ nav_order: 6
 ---
 
 # Release Notes
-## 1.3.1 (11/16/2025)
+## 1.3.7 (01/04/2026)
 Current
 {: .label .label-blue }
 
+1. Improved migration progress reporting.
+2. General improvements and fixes.
+
+## 1.3.1 (11/16/2025)
 1. Added the ability to maximize the wizard window.
-3. General improvements and fixes.
+2. General improvements and fixes.
 
 ## 1.2.6 (11/06/2025)
 1. Added screen to manage File Share Subscription Credentials
