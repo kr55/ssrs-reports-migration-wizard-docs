@@ -67,8 +67,11 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 
 ---
 
-## 🔐 Security
+## 🔐 Security  
+Your server credentials and configuration data never leave your environment.  
+The tool performs all operations using direct API calls within your network.
+👉 For detailed information on data handling, credential storage, telemetry, and offline usage, see  
+**[Security & Compliance](./security-and-compliance.html)**.
 
-Your server credentials and configuration data never leave your environment. The tool performs all operations using direct API calls between your machines.
 
 ---
