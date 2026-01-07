@@ -24,7 +24,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Data Sources
   - Datasets
   - Subscriptions (Standard and Data-driven)
-  - Report parameters and defaults 
+  - Report Parameters and Defaults 
   - Roles
 
 - **Flexible Migration Source and Targets**:
