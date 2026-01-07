@@ -59,6 +59,3 @@ SSRS Reports Migration Wizard is designed with **enterprise security, data priva
 Customers are responsible for ensuring that permissions and credential-handling options selected within the tool align with their internal security policies and compliance standards.
 
 ---
-
-For required permissions and access roles, see  
-👉 **[Prerequisites](./prerequisites.html)**.
