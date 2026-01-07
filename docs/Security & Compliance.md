@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Security & Compliance
-nav_order: 4
+nav_order: 3
 has_children: false
 ---
 # Security & Compliance
