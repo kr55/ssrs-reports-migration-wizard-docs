@@ -38,6 +38,7 @@ Click **Next** to continue.
 - You can preview object counts by type on the right panel.
 - Optionally, check **"Migrate subscriptions"** to include subscriptions.
 - Optionally, check **Migrate roles** to include security roles at folder, report, dataset and datasource level.
+- Optionally, check **Migrate parameters and defaults** to include report server side report parameters and their default values.
 
 <img src="../media/select-report-items.png" style="width:75%; height:75%">
 
