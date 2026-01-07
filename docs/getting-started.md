@@ -44,7 +44,7 @@ Click **Next** to continue.
 
 Click **Next** once you’ve selected the required items.
 
-## Update Data Source Connections ![BETA](https://img.shields.io/badge/status-BETA-blue)
+## Update Data Source Connections
 
 The SSRS Reports Migration Wizard includes an optional step to update data source connection strings during the migration process. This is particularly useful when migrating reports and datasets from a source server to a target server that uses different connection details or data source configurations.
 
