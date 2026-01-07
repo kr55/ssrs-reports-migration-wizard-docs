@@ -6,10 +6,14 @@ nav_order: 8
 ---
 
 # Release Notes
-## 1.3.8 (01/04/2026)
+## 1.3.8 (01/07/2026)
 Current
 {: .label .label-blue }
 
+1. Added support for SSRS report server report parameters and defaults transfer.
+2. General improvements and fixes.
+   
+## 1.3.8 (01/04/2026)
 1. Improved migration progress reporting.
 2. General improvements and fixes.
 
