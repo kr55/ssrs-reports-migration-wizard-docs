@@ -158,6 +158,5 @@ Click **Finish** to start the migration process.
 
 - If credentials are not configured, **subscriptions will fail to migrate**.
 - Only **Native mode SSRS servers** are supported — **SharePoint mode is not supported**.
-- There is no way to identify if a subscription already exists; re-migrating subscriptions for the same report will create duplicate subscriptions.
 
 
