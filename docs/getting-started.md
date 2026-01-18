@@ -131,7 +131,8 @@ Click **Finish** to start the migration process.
 
 - View a detailed log of all migrated items.
 - Warnings about existing folders or skipped operations will be shown.
-- Click **Report** to view a full migration log or **Close** to exit the wizard.
+- Click **View Report** button to view migration log during or after the migration is completed.
+
 
 <img src="../media/finish.png" style="width:75%; height:75%">
 
