@@ -12,7 +12,8 @@ Current
 
 1. Added real-time migration monitoring via live log files for better visibility during active processes.
 2. Improved the migration wizard to automatically skip duplicate report subscriptions by verifying matching properties such as Description, EventType, DeliveryExtension, IsDataDriven, ExtensionSettings & Parameters.
-3. Enhanced overall system stability and performance through general maintenance and bug fixes.
+3. Option to update connection strings while importing SSRS items from .srmw file to target report server.
+4. General improvements and fixes.
    
 ## 1.3.9 (01/07/2026)
 1. Added support for SSRS report server report parameters and defaults transfer.
