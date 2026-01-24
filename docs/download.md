@@ -14,6 +14,8 @@ nav_order: 4
 1. TOC
 {:toc}
 
+{% include youtubePlayer.html id="EJbwbk4YC6w" %}
+
 ## Order a License Key
 
 Unlock the full power of SSRS Reports Migration Wizard by purchasing a license key.
