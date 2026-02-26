@@ -6,10 +6,13 @@ nav_order: 8
 ---
 
 # Release Notes
-## 1.4.1 (01/18/2026)
+## 1.4.3 (02/26/2026)
 Current
 {: .label .label-blue }
 
+1. General improvements and fixes.
+
+## 1.4.1 (01/18/2026)
 1. Added real-time migration monitoring via live log files for better visibility during active processes.
 2. Improved the migration wizard to automatically skip duplicate report subscriptions by verifying matching properties such as Description, EventType, DeliveryExtension, IsDataDriven, ExtensionSettings & Parameters.
 3. Option to update connection strings while importing SSRS items from .srmw file to target report server.
