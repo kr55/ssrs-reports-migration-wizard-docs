@@ -1,5 +1,5 @@
 ---
-title: SSRS & Power BI Report Server Migration Tool
+title: Home
 layout: home
 nav_order: 1
 ---
