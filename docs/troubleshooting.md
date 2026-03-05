@@ -73,3 +73,37 @@ The resolution depends on your organization's security policy for report executi
 ### **Summary**
 
 This error is a security-related failure indicating that the **SSRS service cannot connect to the data source** using the configured method (Stored, Integrated, or None) because a valid, non-interactive security token is missing or invalid. Configuring **Stored Credentials** for the data source is the most reliable way to resolve this issue during a migration and ensure subscriptions execute successfully.
+
+## 3. Issue: HTTP 500 Error When Retrieving Shared Schedules
+
+**Error message:** Response status code does not indicate success: 500 (Internal Server Error)
+
+### **Typical Causes**
+
+This error occurs during migration when the wizard attempts to retrieve **shared schedules** from the source SQL Server Reporting Services (SSRS) instance. Shared schedules are **system-level objects** within SSRS, and accessing them requires permissions at the **site level**, not just at the folder or report level.
+
+If the account used by the migration wizard lacks sufficient system permissions, the Report Server web service may return a generic **HTTP 500 Internal Server Error** instead of a descriptive authorization message.
+
+Key reasons include:
+
+* **Insufficient System-Level Permissions:** The user account connecting to the **source SSRS server** does not have the required **System Administrator** or equivalent site-level permissions. Access to shared schedules is restricted to system-level roles in SSRS.
+* **Limited Folder-Level Access:** The account has permissions to view or manage reports within folders but does **not have permissions at the Site Settings level**, which are required to retrieve shared schedules.
+* **Restricted Schedule Management Rights:** Even when the user has a system role assigned, the role may not include permissions required to manage or enumerate shared schedules.
+
+### **Resolution**
+
+To resolve this issue, ensure the account used to connect to the **source SSRS server** has sufficient **system-level permissions**.
+
+1.  Open the **SSRS Web Portal** for the source report server.
+2.  Navigate to **Site Settings**.
+3.  Select **Security**.
+4.  Ensure the user account running the migration wizard is assigned one of the following roles:
+    * **System Administrator** (recommended)
+    * **System User** with permissions to manage shared schedules
+5.  Save the changes and restart the migration process.
+
+If organizational policies prevent assigning the **System Administrator** role, ensure the assigned role includes permissions required to **view and enumerate shared schedules**.
+
+### **Summary**
+
+This error occurs because **shared schedules are system-level SSRS objects** that require **site-level permissions** to access. When the migration wizard attempts to retrieve schedules without sufficient permissions, the SSRS web service may return a **generic HTTP 500 error**. Granting the appropriate **System Administrator or schedule management permissions** resolves the issue and allows the migration process to continue successfully.
