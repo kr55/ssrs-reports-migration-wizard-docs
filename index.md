@@ -46,6 +46,9 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 - **Subscription Support**:
   - Export and recreate SSRS subscriptions
 
+- **Manage Folder Mapping**:
+ - Rename or consolidate folders during the migration
+
 ---
 
 ## 📦 Use Cases
