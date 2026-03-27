@@ -58,14 +58,14 @@ Use this screen to define how source folders should be created in the target env
 ### Supported scenarios
 
 - Rename folders during migration  
-  Example: `/Finance` → `Finance_New`
+  Example: `/Finance` → `/Finance_New`
 
 - Migrate to a different folder name  
-  Example: `/Reports` → `Prod_Reports`
+  Example: `/Reports` → `/Prod_Reports`
 
 - Consolidate multiple folders into a single target folder  
   Example:  
-  `/Sales Asia`, `/Sales EU`, `/Sales NA` → `Sales`
+  `/Sales Asia`, `/Sales EU`, `/Sales NA` → `/Sales`
 
 ### Folder Rename Behavior
 
