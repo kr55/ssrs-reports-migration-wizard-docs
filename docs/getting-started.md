@@ -44,6 +44,57 @@ Click **Next** to continue.
 
 Click **Next** once you’ve selected the required items.
 
+## Manage Folder Mapping
+
+This step is available only when **Rename target folders during migration** is enabled.
+Use this screen to define how source folders should be created in the target environment.
+
+### How it works
+
+- Each selected root folder is listed with its corresponding target folder name.
+- The **Target Folder** column is editable.
+- By default, the target folder name matches the source folder name.
+
+### Supported scenarios
+
+- Rename folders during migration  
+  Example: `/Finance` → `Finance_New`
+
+- Migrate to a different folder name  
+  Example: `/Reports` → `Prod_Reports`
+
+- Consolidate multiple folders into a single target folder  
+  Example:  
+  `/Sales Asia`, `/Sales EU`, `/Sales NA` → `Sales`
+
+### Folder Rename Behavior
+
+When folder renaming is enabled:
+
+- The folder structure in the target environment is created based on the mapping defined in the Folder Mapping step.
+- All dependent references are automatically updated, including:
+  - Shared data sources
+  - Shared datasets
+  - Subscriptions (including data-driven subscriptions)
+
+If folder renaming is not enabled, the original folder structure is preserved.
+
+### Folder Rename in File Export
+
+When exporting to SRMW format, folder renaming is applied to the generated file structure.
+
+- Subscription files are saved using the transformed folder paths.
+- All references inside exported content are updated accordingly.
+
+This ensures consistency between exported files and the target environment.
+
+{: .note }
+> 1. Only top-level selected folders can be renamed.
+> 
+> 2. All nested items (reports, datasets, data sources, subscriptions) will follow the updated folder structure.
+>    
+> 3. All internal references are automatically updated during migration.
+
 ## Update Data Source Connections
 
 The SSRS Reports Migration Wizard includes an optional step to update data source connection strings during the migration process. This is particularly useful when migrating reports and datasets from a source server to a target server that uses different connection details or data source configurations.
