@@ -20,7 +20,6 @@ nav_order: 5
 
 Click **Next** to proceed.
 
-
 ## Choose Target
 
 - Choose the **target type**: another SSRS Report Server or SRMW file.
@@ -66,6 +65,8 @@ Use this screen to define how source folders should be created in the target env
 - Consolidate multiple folders into a single target folder  
   Example:  
   `/Sales Asia`, `/Sales EU`, `/Sales NA` → `/Sales`
+
+  <img src="../media/manage-folder-mapping.png" style="width:75%; height:75%">
 
 ### Folder Rename Behavior
 
