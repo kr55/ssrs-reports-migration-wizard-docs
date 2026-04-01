@@ -16,9 +16,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 
 {% include youtubePlayer.html id="U-U-PAzOLP4" %}
 
-## What's New
-
-Keep up with the latest capabilities and system improvements. 
+## 🚀 What's New
 
 ### March 2026 (Version 1.4.5)
 * **Target Folder Renaming:** You can now rename folders during the migration process. This allows for better organization on the target server without requiring manual post-migration cleanup.
