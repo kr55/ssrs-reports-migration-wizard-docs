@@ -2,6 +2,7 @@
 layout: page
 title: Security & Compliance
 nav_order: 3
+permalink: /security-compliance/
 has_children: false
 ---
 # Security & Compliance
