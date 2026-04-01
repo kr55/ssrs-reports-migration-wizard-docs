@@ -74,7 +74,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 Your server credentials and configuration data never leave your environment.  
 The tool performs all operations using direct API calls within your network.
 
-👉 For detailed information on data handling, credential storage, telemetry, and offline usage, see [Security & Compliance](https://ssrsmigrationwizard.azureops.org/docs/security-compliance/).
+👉 For detailed information on data handling, credential storage, telemetry, and offline usage, see [Security & Compliance](https://ssrsmigrationwizard.azureops.org/security-compliance/).
 
 
 ---
