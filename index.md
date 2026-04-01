@@ -21,7 +21,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 ### March 2026 (Version 1.4.5)
 * **Target Folder Renaming:** You can now rename folders during the migration process. This allows for better organization on the target server without requiring manual post-migration cleanup.
 * **Flexible UI Scaling:** The Wizard interface is now fully responsive and resizable, ensuring a comfortable experience on high-resolution displays or small laptop screens.
-* **Performance Optimization:** We have significantly improved the loading and response times of the **Report Items Selection** screen, especially for environments with thousands of objects.
+* **Performance Optimization:** We have significantly improved the loading and response times of the Report Items Selection screen, especially for environments with thousands of objects.
 * **Quality Improvements:** General stability fixes and internal performance enhancements to ensure a smoother migration flow.
 
 ## 🚀 Features at a Glance
