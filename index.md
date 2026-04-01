@@ -26,10 +26,6 @@ Keep up with the latest capabilities and system improvements.
 * **Performance Optimization:** We have significantly improved the loading and response times of the **Report Items Selection** screen, especially for environments with thousands of objects.
 * **Quality Improvements:** General stability fixes and internal performance enhancements to ensure a smoother migration flow.
 
-> [!NOTE]
-> For a comprehensive list of all technical fixes and historical changes, please visit the [Release Notes](./release-notes.md).
----
-
 ## 🚀 Features at a Glance
 
 - **Migrate Key SSRS Components**:
