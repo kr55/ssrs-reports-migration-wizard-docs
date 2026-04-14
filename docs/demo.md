@@ -33,3 +33,14 @@ Check out these brief demonstrations to understand how SSRS Reports Migration Wi
 
 ---
 
+## Migrate SSRS Reports to Power BI Report Server
+### Use cases
+1. Transition legacy SSRS reports to a modern Power BI Report Server (PBIRS) environment while preserving functionality.  
+2. Consolidate traditional paginated reports and Power BI reports into a single on-premises portal.  
+3. Bulk migrate assets to PBIRS without the tedious process of manual "Upload" for every individual file.  
+
+[Learn more](https://azureops.org/articles/migrate-ssrs-reports-to-power-bi-report-server/){: .btn .btn-purple .mr-2 }
+
+---
+
+
