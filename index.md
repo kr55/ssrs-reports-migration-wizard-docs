@@ -32,6 +32,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Data Sources
   - Datasets
   - Subscriptions (Standard and Data-driven)
+  - Shared Schedules
   - Report Parameters and Defaults 
   - Roles
 
