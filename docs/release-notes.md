@@ -7,10 +7,14 @@ nav_order: 8
 
 # Release Notes
 
-## 1.4.5 (03/29/2026)
+## 1.4.7 (06/05/2026)
 Current
 {: .label .label-blue }
 
+1. Added support for linked reports.
+4. General improvements and fixes.
+
+## 1.4.5 (03/29/2026)
 1. Added support for renaming the target folders during migration.
 2. Wizard can now resize to any required size.
 3. Improved performance of report items selection screen.
