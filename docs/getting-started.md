@@ -42,6 +42,26 @@ Click **Next** to continue.
 - Check **Migrate parameters and defaults** to include report server side report parameters and their default values.
 - Check **Rename target folders during migration** to enable **Manage Folder Mapping** screen.
 
+## Compare with Target
+
+Before starting a migration, you can compare the contents of the source and target servers to understand what already exists on the target and what still needs to be migrated.
+
+On the **Select SSRS Items** screen, click the **Compare with Target** button. A Save dialog will appear with a pre-populated filename (e.g., `SSRS_Comparison_20260605_143022.csv`). Once saved, the report opens automatically.
+
+### What the report contains
+
+The CSV report has three sections:
+
+- **Report Info** — Source, target, their types, and the timestamp.
+- **Summary** — Overall and per-type counts of Matched, Source Only, and Target Only items.
+- **Item Comparison** — A full row-by-row listing of every catalog item with Name, Path, Type, In Source, In Target, and Status (`Matched`, `Source Only`, `Target Only`).
+
+Use the **Status** column filter in Excel to quickly isolate items missing from the target before running the migration.
+
+> 1. The target server must be connected before clicking **Compare with Target**.
+> 2. Matching is based on catalog path only — content changes are not detected.
+> 3. Re-run the comparison after migration to confirm all items were transferred successfully.
+
 <img src="../media/select-report-items.png" style="width:75%; height:75%">
 
 Click **Next** once you’ve selected the required items.
