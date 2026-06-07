@@ -213,7 +213,7 @@ Click **Finish** to start the migration process.
 <img src="../media/finish.png" style="width:75%; height:75%">
 
 
-## Grocery (Glossary) of Terms
+## ## Glossary of Terms
 
 | Term                          | Meaning | Example |
 |-------------------------------|---------|---------------------------|
