@@ -18,11 +18,10 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 
 ## 🚀 What's New
 
-### March 2026 (Version 1.4.5)
-* **Target Folder Renaming:** You can now rename folders during the migration process. This allows for better organization on the target server without requiring manual post-migration cleanup.
-* **Flexible UI Scaling:** The Wizard interface is now fully responsive and resizable, ensuring a comfortable experience on high-resolution displays or small laptop screens.
-* **Performance Optimization:** We have significantly improved the loading and response times of the Report Items Selection screen, especially for environments with thousands of objects.
-* **Quality Improvements:** General stability fixes and internal performance enhancements to ensure a smoother migration flow.
+### June 2026 (Version 1.4.8)
+- **Linked Report Support:** The wizard now fully migrates linked reports, preserving their relationship to the parent report and any parameter or data source overrides on the target server.
+- **Compare with Target:** A new comparison feature lets you generate a detailed CSV report showing which items exist on the source, target, or both — helping you identify migration gaps before or after a migration run.
+- **General Improvements:** Stability fixes and internal enhancements.
 
 ## 🚀 Features at a Glance
 
