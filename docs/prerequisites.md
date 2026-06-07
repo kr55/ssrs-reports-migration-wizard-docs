@@ -96,5 +96,5 @@ Look for the `<UrlRoot>` tag to confirm the configured endpoint (if it exists).
 
 ## Next Step
 
-Once all prerequisites are met, proceed to the [Getting Started Guide](./getting-started) to begin your migration.
+Once all prerequisites are met, proceed to the [Getting Started Guide](https://ssrsmigrationwizard.azureops.org/getting-started/) to begin your migration.
 
