@@ -42,13 +42,13 @@ Click **Next** to continue.
 - Check **Migrate parameters and defaults** to include report server side report parameters and their default values.
 - Check **Rename target folders during migration** to enable **Manage Folder Mapping** screen.
 
-## Compare with Target
+### Compare with Target
 
 Before starting a migration, you can compare the contents of the source and target servers to understand what already exists on the target and what still needs to be migrated.
 
 On the **Select SSRS Items** screen, click the **Compare with Target** button. A Save dialog will appear with a pre-populated filename (e.g., `SSRS_Comparison_20260605_143022.csv`). Once saved, the report opens automatically.
 
-### What the report contains
+** What the report contains**
 
 The CSV report has three sections:
 
