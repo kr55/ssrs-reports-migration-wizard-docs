@@ -7,11 +7,12 @@ nav_order: 8
 
 # Release Notes
 
-## 1.4.7 (06/05/2026)
+## 1.4.8 (06/07/2026)
 Current
 {: .label .label-blue }
 
 1. Added support for linked reports.
+2. Added feature to compare source and target server items and generate detailed comparison report.
 4. General improvements and fixes.
 
 ## 1.4.5 (03/29/2026)
