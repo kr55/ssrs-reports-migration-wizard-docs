@@ -48,8 +48,6 @@ Before starting a migration, you can compare the contents of the source and targ
 
 On the **Select SSRS Items** screen, click the **Compare with Target** button. A Save dialog will appear with a pre-populated filename (e.g., `SSRS_Comparison_20260605_143022.csv`). Once saved, the report opens automatically.
 
-**What the report contains**
-
 The CSV report has three sections:
 
 - **Report Info** — Source, target, their types, and the timestamp.
