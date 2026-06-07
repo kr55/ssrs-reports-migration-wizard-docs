@@ -45,6 +45,10 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Select exactly which objects to migrate
   - Visual and intuitive navigation through report folder hierarchy
  
+- **Compare with Target**:
+  - Compare source and target server contents before or after migration
+  - Generate a detailed CSV report showing Matched, Source Only, and Target Only items
+ 
 - **Update Data Source Connections:**  
   - Optionally review and update connection strings and credentials during migration
   - Convert embedded report data sources to shared data sources
