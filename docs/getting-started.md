@@ -8,6 +8,8 @@ nav_order: 5
 # Getting Started
 {: .no_toc }
 
+The wizard walks you through six steps: choose source → choose target → select items → update connections → review → migrate
+
 ## Choose Source
 
 - Choose the **source type**: either an SSRS Report Server or an SRMW file.
