@@ -58,9 +58,10 @@ The CSV report has three sections:
 
 Use the **Status** column filter in Excel to quickly isolate items missing from the target before running the migration.
 
-> 1. The target server must be connected before clicking **Compare with Target**.
-> 2. Matching is based on catalog path only, content changes are not detected.
-> 3. Re-run the comparison after migration to confirm all items were transferred successfully.
+{: .note }
+> 1. Matching is based on catalog path only, content changes are not detected.
+>    
+> 2. Re-run the comparison after migration to confirm all items were transferred successfully.
 
 Click **Next** once you’ve selected the required items.
 
