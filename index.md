@@ -20,7 +20,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 
 ### June 2026 (Version 1.4.8)
 - **Linked Report Support:** The wizard now fully migrates linked reports, preserving their relationship to the parent report and any parameter or data source overrides on the target server.
-- **Compare with Target:** A new comparison feature lets you generate a detailed CSV report showing which items exist on the source, target, or both — helping you identify migration gaps before or after a migration run.
+- **Compare with Target:** A new comparison feature lets you generate a detailed CSV report showing which items exist on the source, target, or both, helping you identify migration gaps before or after a migration run.
 - **General Improvements:** Stability fixes and internal enhancements.
 
 ## 🚀 Features at a Glance
