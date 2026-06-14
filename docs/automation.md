@@ -65,6 +65,26 @@ If you prefer not to modify environment variables, prefix every command with the
 {: .note }
 > If the installation path contains spaces, always wrap it in double quotes as shown above.
 
+## Limitations
+
+### Data Source Credentials
+
+The command-line utility migrates data source definitions as-is from the source server. It does not support interactively reviewing or updating data source connection strings or credentials during migration, unlike the wizard UI which provides a **Update Data Source Connections** step.
+
+As a result, if the target server uses different credentials or connection strings than the source, migrated reports may fail to execute until the data sources are manually reconfigured on the target.
+
+**Recommended approach before running `/ms:true`:**
+
+1. Run the migration once without `/ms:true` to migrate all items and data sources first.
+2. Log into the target report server and verify all data sources are correctly configured and can connect successfully.
+3. Re-run the migration with `/ms:true` to transfer subscriptions once data sources are confirmed working.
+
+> Subscriptions that reference a data source with missing or incorrect credentials will fail to execute on the target server even if the subscription itself is transferred successfully.
+
+### Subscription Credentials
+
+Subscription delivery credentials (e.g. file share username and password for file delivery subscriptions) are not stored in the SSRS catalog and therefore cannot be exported or migrated automatically. After migration, file share and email delivery subscriptions may need their delivery credentials re-entered manually on the target server.
+
 ## Items parameter format
 
 The `items` parameter accepts a JSON array. Each object must include `Name`, `Path`, and `Type`.
