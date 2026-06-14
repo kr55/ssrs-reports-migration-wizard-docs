@@ -49,6 +49,11 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Compare source and target server contents before or after migration
   - Generate a detailed CSV report showing Matched, Source Only, and Target Only items
  
+- **Command-Line Automation (Preview)**:
+  - Automate migrations using the built-in command-line utility
+  - Integrate with Windows Task Scheduler, CI/CD pipelines, or deployment scripts
+  - Full parameter support for all migration options [Learn more](https://ssrsmigrationwizard.azureops.org/automation/)
+ 
 - **Update Data Source Connections:**  
   - Optionally review and update connection strings and credentials during migration
   - Convert embedded report data sources to shared data sources
