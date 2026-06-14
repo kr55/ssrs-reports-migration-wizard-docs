@@ -58,7 +58,7 @@ If the executable is found, you are ready to run migrations from any directory.
 
 If you prefer not to modify environment variables, prefix every command with the full path to the executable:
 
-```
+```PowerShell
 "C:\Program Files\AzureOps\SSRS Reports Migration Wizard\SSRS.Reports.Migration.Wizard.exe" /st:0 /ssn:http://SourceServer/ReportServer /tt:0 /tsn:http://TargetServer/ReportServer
 ```
 
