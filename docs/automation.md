@@ -27,8 +27,7 @@ Below is a table summarizing the parameters for the command-line utility.
 | tp | Optional when tt = 0 | Target password. Required when `tu` is specified. |
 | srmwfp | Mandatory when st or tt = 1 | Full path of the SRMW file. e.g. `D:\Exports\backup.srmw` |
 | items | Optional | Specify SSRS items to migrate in JSON format. See usage examples below. When not specified, the entire catalog from the source will be migrated to the target. |
-| rf | Optional | Rename folders during migration. Possible values are `true` and `false`. Default is `false`. Used in conjunction with the `fm` parameter. |
-| fm | Optional | Source to target folder mapping in JSON format. e.g. `{"Source Folder":"Target Folder"}`. When specified, items in the source folder will be migrated to the mapped target folder name. |
+| fm | Optional | Source to target folder mapping in JSON format. e.g. `{"Source Folder":"Target Folder"}`. When specified, items in the source folder will be migrated to the mapped target folder name on the target. Folder renaming is applied automatically when this parameter is provided — no additional parameter is required. |
 | ms | Optional | Migrate subscriptions. Possible values are `true` and `false`. Default is `false`. When set to `true`, report subscriptions and shared schedules will be migrated to the target. |
 | mr | Optional | Migrate roles. Possible values are `true` and `false`. Default is `false`. When set to `true`, item-level role assignments will be migrated to the target. |
 | mp | Optional | Migrate report parameters and defaults. Possible values are `true` and `false`. Default is `false`. When set to `true`, report parameter default values will be applied on the target after migration. |
@@ -172,10 +171,10 @@ SSRS.Reports.Migration.Wizard.exe /st:0 /ssn:http://SourceServer/ReportServer /t
 
 ---
 
-Migrate all items and rename a folder on the target server.
+Migrate all items and rename a folder on the target server. Specifying `/fm` is sufficient — folder renaming is applied automatically.
 
 ```powershell
-SSRS.Reports.Migration.Wizard.exe /st:0 /ssn:http://SourceServer/ReportServer /tt:0 /tsn:http://TargetServer/ReportServer /fm:"{""Sales Staging"":""Sales Production""}" /rf:true /lfd:"D:\Logs"
+SSRS.Reports.Migration.Wizard.exe /st:0 /ssn:http://SourceServer/ReportServer /tt:0 /tsn:http://TargetServer/ReportServer /fm:"{""Sales Staging"":""Sales Production""}" /lfd:"D:\Logs"
 ```
 
 ---
