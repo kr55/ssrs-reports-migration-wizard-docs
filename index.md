@@ -18,10 +18,11 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 
 ## 🚀 What's New
 
-### June 2026 (Version 1.4.8)
+### June 2026 (Version 1.5.0)
 - **Linked Report Support:** The wizard now fully migrates linked reports, preserving their relationship to the parent report and any parameter or data source overrides on the target server.
 - **Compare with Target:** A new comparison feature lets you generate a detailed CSV report showing which items exist on the source, target, or both, helping you identify migration gaps before or after a migration run.
 - **General Improvements:** Stability fixes and internal enhancements.
+- **Command-Line Automation:** The wizard now includes a command-line utility (`SSRS.Reports.Migration.Wizard.exe`) enabling fully automated migrations. Supports all migration options including subscriptions, roles, parameters, folder mapping, and selective item migration via JSON. Ideal for scheduled and CI/CD-driven workflows.
 
 ## 🚀 Features at a Glance
 
@@ -52,7 +53,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 - **Command-Line Automation (Preview)**:
   - Automate migrations using the built-in command-line utility
   - Integrate with Windows Task Scheduler, CI/CD pipelines, or deployment scripts
-  - Full parameter support for all migration options [Learn more](https://ssrsmigrationwizard.azureops.org/automation/)
+  - Full parameter support for all migration options
  
 - **Update Data Source Connections:**  
   - Optionally review and update connection strings and credentials during migration
@@ -77,6 +78,8 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 - Migrating to a new SSRS or Power BI Report Server instance after server upgrades
 - Sharing report packages across teams
 - Managing Power BI Report Server (PBIRS) environments that host SSRS items
+- Automating nightly or scheduled SSRS migrations using Windows Task Scheduler/SQL Server agent jobs
+- Integrating SSRS migrations into CI/CD pipelines and deployment scripts
 
 ---
 
@@ -85,6 +88,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 - [Installation Guide](https://ssrsmigrationwizard.azureops.org/download/)
 - [Prerequisites](https://ssrsmigrationwizard.azureops.org/docs/prerequisites.html)
 - [Getting Started](https://ssrsmigrationwizard.azureops.org/getting-started/)
+- [Automation & Command-Line Reference](https://ssrsmigrationwizard.azureops.org/automation/)
 
 ---
 
