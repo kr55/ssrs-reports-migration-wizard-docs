@@ -217,7 +217,7 @@ Click **Finish** to start the migration process.
 
 Prefer to automate migrations without the wizard UI? The SSRS Reports Migration Wizard includes a built-in command-line utility that supports all the same migration options — subscriptions, roles, parameters, folder mapping, and selective item migration.
 
-```PowerShell
+```powershell
 SSRS.Reports.Migration.Wizard.exe /st:0 /ssn:http://SourceServer/ReportServer /tt:0 /tsn:http://TargetServer/ReportServer /ms:true /mr:true /mp:true /lfd:"D:\Logs"
 ```
 See the full [Automation & Command-Line Reference](https://ssrsmigrationwizard.azureops.org/automation/) for all parameters and usage examples.
