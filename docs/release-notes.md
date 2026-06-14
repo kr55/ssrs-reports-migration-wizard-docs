@@ -7,9 +7,13 @@ nav_order: 9
 
 # Release Notes
 
-## 1.4.8 (06/07/2026)
+## 1.5.0 (06/15/2026)
 Current
 {: .label .label-blue }
+
+1. Added initial support for command-line-utility. 
+
+## 1.4.8 (06/07/2026)
 
 1. Added support for linked reports.
 2. Added feature to compare source and target server items and generate detailed comparison report.
