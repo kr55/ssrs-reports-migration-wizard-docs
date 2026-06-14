@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Automation(Preview)
+title: Automation (Preview)
 permalink: /automation/
 nav_order: 7
 ---
