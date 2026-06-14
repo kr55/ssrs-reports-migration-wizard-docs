@@ -9,6 +9,8 @@ nav_order: 7
 
 With the SSRS Reports Migration Wizard (SRMW) command-line utility, you can automate routine migrations in a few clicks. The migration script can be integrated with any scheduler or CI/CD tool.
 
+<img src="../media/automation-cli.gif" width="700">
+
 ## Parameters
 
 `SSRS.Reports.Migration.Wizard.exe` initiates the migration using the parameters specified on the command line.
