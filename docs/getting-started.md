@@ -172,6 +172,7 @@ If no shared data source currently exists for this connection, the dialog will a
 ## Manage File Share Subscription Credentials
 
 If you have selected **Migrate subscriptions**, the wizard will automatically scan the source SSRS instance and detect subscriptions that use the File Share delivery method (i.e., exports reports to a network/shared folder).
+**Planning to automate with the command line?** The command-line utility does not support updating data source credentials during migration. Ensure all data sources on the target are correctly configured before running automated subscription migration. See [Automation Limitations](https://ssrsmigrationwizard.azureops.org/automation/#limitations) for details.
 
 Since SSRS does not return stored passwords for file-share subscriptions, the wizard provides a screen to collect network credentials required to successfully recreate these subscriptions on the target server.
 
