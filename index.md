@@ -21,8 +21,8 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 ### June 2026 (Version 1.5.0)
 - **Linked Report Support:** The wizard now fully migrates linked reports, preserving their relationship to the parent report and any parameter or data source overrides on the target server.
 - **Compare with Target:** A new comparison feature lets you generate a detailed CSV report showing which items exist on the source, target, or both, helping you identify migration gaps before or after a migration run.
-- **General Improvements:** Stability fixes and internal enhancements.
 - **Command-Line Automation:** The wizard now includes a command-line utility (`SSRS.Reports.Migration.Wizard.exe`) enabling fully automated migrations. Supports all migration options including subscriptions, roles, parameters, folder mapping, and selective item migration via JSON. Ideal for scheduled and CI/CD-driven workflows.
+- **General Improvements:** Stability fixes and internal enhancements.
 
 ## 🚀 Features at a Glance
 
