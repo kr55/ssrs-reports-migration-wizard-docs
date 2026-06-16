@@ -197,3 +197,10 @@ Save as `nightly_migration.bat` and configure Windows Task Scheduler to run it o
 | 0 | Success |
 | -1 | Failure |
 | -2 | Fatal error during initialisation |
+
+{: .note }
+> **Security Note:** Avoid passing passwords directly as command-line arguments 
+> (`/sp`, `/tp`) as they may be visible in process listings and shell history. 
+> Where possible, use Windows Authentication by omitting `/su`/`/sp` entirely, 
+> or store passwords in environment variables and reference them in your script.
+
