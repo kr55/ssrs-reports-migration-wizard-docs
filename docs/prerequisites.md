@@ -160,8 +160,6 @@ If access to the **Home** folder is restricted or inheritance has been broken:
 3. Add the required domain account and assign the appropriate role.
 4. Repeat for each subfolder where inheritance has been disabled.
 
----
-
 ###  Site-Level Access (System Permissions)
 
 Use this procedure when migrating shared schedules, subscriptions, or security roles.
