@@ -89,21 +89,39 @@ Key reasons include:
 * **Insufficient System-Level Permissions:** The user account connecting to the **source SSRS server** does not have the required **System Administrator** or equivalent site-level permissions. Access to shared schedules is restricted to system-level roles in SSRS.
 * **Limited Folder-Level Access:** The account has permissions to view or manage reports within folders but does **not have permissions at the Site Settings level**, which are required to retrieve shared schedules.
 * **Restricted Schedule Management Rights:** Even when the user has a system role assigned, the role may not include permissions required to manage or enumerate shared schedules.
+* **Insufficient Target Server Permissions:** The user account connecting to the **target SSRS server** does not have the **System Administrator** site-level role required to create new shared schedules on the target. This prevents shared schedules from being recreated during migration.
 
 ### **Resolution**
 
-To resolve this issue, ensure the account used to connect to the **source SSRS server** has sufficient **system-level permissions**.
+Shared schedule migration requires sufficient permissions on **both** the source and target servers.
 
-1.  Open the **SSRS Web Portal** for the source report server.
-2.  Navigate to **Site Settings**.
-3.  Select **Security**.
-4.  Ensure the user account running the migration wizard is assigned one of the following roles:
-    * **System Administrator** (recommended)
-    * **System User** with permissions to manage shared schedules
-5.  Save the changes and restart the migration process.
+#### Source Server — Read Schedules
 
-If organizational policies prevent assigning the **System Administrator** role, ensure the assigned role includes permissions required to **view and enumerate shared schedules**.
+The account used to connect to the source server must be able to read shared schedules.
+The SSRS operation required is `Read Schedules`.
+
+1. Open the **SSRS Web Portal** for the **source** report server.
+2. Navigate to **Site Settings → Security**.
+3. Ensure the user account is assigned one of the following roles:
+   - **System Administrator** (recommended)
+   - **System User** — provides read access to shared schedules without full admin rights
+
+#### Target Server — Create Schedules
+
+The account used to connect to the target server must be able to create shared schedules.
+The SSRS operation required is `Create Schedules`.
+
+1. Open the **SSRS Web Portal** for the **target** report server.
+2. Navigate to **Site Settings → Security**.
+3. Ensure the user account is assigned the following role:
+   - **System Administrator** — required to create new shared schedules on the target
+
+> **Note:** `System User` role is sufficient to **read** schedules on the source but is **not sufficient** to **create** schedules on the target. The target requires `System Administrator`.
+
+#### Continuing Without Shared Schedule Migration
+
+If your organization's policies prevent assigning the required roles, the wizard will detect the missing permissions when you check **Migrate Subscriptions** and offer the option to continue without shared schedule migration. Subscriptions will still be migrated but will not have shared schedule assignments.
 
 ### **Summary**
 
-This error occurs because **shared schedules are system-level SSRS objects** that require **site-level permissions** to access. When the migration wizard attempts to retrieve schedules without sufficient permissions, the SSRS web service may return a **generic HTTP 500 error**. Granting the appropriate **System Administrator or schedule management permissions** resolves the issue and allows the migration process to continue successfully.
+Shared schedule migration requires `Read Schedules` permission (`System User` or above) on the **source** server and `Create Schedules` permission (`System Administrator`) on the **target** server. When either permission is missing, the wizard will warn you and offer the option to continue migration without shared schedules — subscriptions will still be migrated without schedule assignments.
