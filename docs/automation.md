@@ -11,30 +11,6 @@ With the SSRS Reports Migration Wizard (SRMW) command-line utility, you can auto
 
 <img src="../media/automation-cli.gif" width="700">
 
-## Parameters
-
-`SSRS.Reports.Migration.Wizard.exe` initiates the migration using the parameters specified on the command line.
-
-Below is a table summarizing the parameters for the command-line utility.
-
-| Parameter | Usage | Description |
-|-----------|-------|-------------|
-| st | Mandatory | Source type. `0` = SSRS / Power BI Report Server, `1` = SRMW file. |
-| ssn | Mandatory when st = 0 | Source report server URL. e.g. `http://servername/ReportServer` |
-| su | Optional when st = 0 | Source username. Supports `DOMAIN\username`, `username@domain.com`, or plain `username` format. When not specified, Windows authentication is used. |
-| sp | Optional when st = 0 | Source password. Required when `su` is specified. |
-| tt | Mandatory | Target type. `0` = SSRS / Power BI Report Server, `1` = SRMW file. |
-| tsn | Mandatory when tt = 0 | Target report server URL. e.g. `http://servername/ReportServer` |
-| tu | Optional when tt = 0 | Target username. Supports `DOMAIN\username`, `username@domain.com`, or plain `username` format. When not specified, Windows authentication is used. |
-| tp | Optional when tt = 0 | Target password. Required when `tu` is specified. |
-| srmwfp | Mandatory when st or tt = 1 | Full path of the SRMW file. e.g. `D:\Exports\backup.srmw` |
-| items | Optional | Specify SSRS items to migrate in JSON format. See usage examples below. When not specified, the entire catalog from the source will be migrated to the target. |
-| fm | Optional | Source to target folder mapping in JSON format. e.g. `{"Source Folder":"Target Folder"}`. When specified, items in the source folder will be migrated to the mapped target folder name on the target. Folder renaming is applied automatically when this parameter is provided.|
-| ms | Optional | Migrate subscriptions. Possible values are `true` and `false`. Default is `false`. When set to `true`, report subscriptions and shared schedules will be migrated to the target. |
-| mr | Optional | Migrate roles. Possible values are `true` and `false`. Default is `false`. When set to `true`, item-level role assignments will be migrated to the target. |
-| mp | Optional | Migrate report parameters and defaults. Possible values are `true` and `false`. Default is `false`. When set to `true`, report parameter default values will be applied on the target after migration. |
-| lfd | Optional | Log file directory. Used to record execution logs and errors during migration. When not specified, the application will write the log at the user's default location. |
-
 ## Before You Begin
 
 Before running the command-line utility, you need to make the executable accessible from any command prompt location. You can do this in one of two ways:
@@ -65,6 +41,30 @@ If you prefer not to modify environment variables, prefix every command with the
 
 {: .note }
 > If the installation path contains spaces, always wrap it in double quotes as shown above.
+
+## Parameters
+
+`SSRS.Reports.Migration.Wizard.exe` initiates the migration using the parameters specified on the command line.
+
+Below is a table summarizing the parameters for the command-line utility.
+
+| Parameter | Usage | Description |
+|-----------|-------|-------------|
+| st | Mandatory | Source type. `0` = SSRS / Power BI Report Server, `1` = SRMW file. |
+| ssn | Mandatory when st = 0 | Source report server URL. e.g. `http://servername/ReportServer` |
+| su | Optional when st = 0 | Source username. Supports `DOMAIN\username`, `username@domain.com`, or plain `username` format. When not specified, Windows authentication is used. |
+| sp | Optional when st = 0 | Source password. Required when `su` is specified. |
+| tt | Mandatory | Target type. `0` = SSRS / Power BI Report Server, `1` = SRMW file. |
+| tsn | Mandatory when tt = 0 | Target report server URL. e.g. `http://servername/ReportServer` |
+| tu | Optional when tt = 0 | Target username. Supports `DOMAIN\username`, `username@domain.com`, or plain `username` format. When not specified, Windows authentication is used. |
+| tp | Optional when tt = 0 | Target password. Required when `tu` is specified. |
+| srmwfp | Mandatory when st or tt = 1 | Full path of the SRMW file. e.g. `D:\Exports\backup.srmw` |
+| items | Optional | Specify SSRS items to migrate in JSON format. See usage examples below. When not specified, the entire catalog from the source will be migrated to the target. |
+| fm | Optional | Source to target folder mapping in JSON format. e.g. `{"Source Folder":"Target Folder"}`. When specified, items in the source folder will be migrated to the mapped target folder name on the target. Folder renaming is applied automatically when this parameter is provided.|
+| ms | Optional | Migrate subscriptions. Possible values are `true` and `false`. Default is `false`. When set to `true`, report subscriptions and shared schedules will be migrated to the target. |
+| mr | Optional | Migrate roles. Possible values are `true` and `false`. Default is `false`. When set to `true`, item-level role assignments will be migrated to the target. |
+| mp | Optional | Migrate report parameters and defaults. Possible values are `true` and `false`. Default is `false`. When set to `true`, report parameter default values will be applied on the target after migration. |
+| lfd | Optional | Log file directory. Used to record execution logs and errors during migration. When not specified, the application will write the log at the user's default location. |
 
 ## Limitations
 
