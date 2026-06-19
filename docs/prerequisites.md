@@ -121,7 +121,9 @@ The permissions you need depend on what you are migrating. Use the table below t
 
 * When connecting across domains, ensure the account is explicitly trusted and authorized on the target report server.
 
-## 🔐 How to Grant Item-Level Access (Folder Permissions)
+## 🔐 Granting Access to SSRS Report Server
+
+### Item-Level Access (Folder Permissions)
 
 Use this procedure when migrating reports, datasets, data sources, or subscriptions.
 
@@ -160,7 +162,7 @@ If access to the **Home** folder is restricted or inheritance has been broken:
 
 ---
 
-## 🔐 How to Grant Site-Level Access (System Permissions)
+###  Site-Level Access (System Permissions)
 
 Use this procedure when migrating shared schedules, subscriptions, or security roles.
 
