@@ -24,7 +24,21 @@ Before using the SSRS Reports Migration Wizard, ensure the following system, net
 
 ## 🔗 Report Server Access Requirements
 
-## Report Server Access Requirements
+### Understanding SSRS Permissions
+
+SSRS uses two separate permission layers. Both must be configured correctly depending on what you are migrating.
+
+### Item-Level Roles (Folder / Report Level)
+
+Assigned at the **Home** folder or subfolder level in the SSRS Web Portal. These roles control access to reports, datasets, data sources, and subscriptions.
+
+| Role            | What it allows                                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Browser         | View reports, folders, and shared datasets. Minimum role required for reading from the source server.                                 |
+| Publisher       | Deploy reports, datasets, and data sources to the target server.                                                                      |
+| Content Manager | Full control of items, including create, edit, delete, and manage security. Required for subscription migration on the target server. |
+
+### Report Server Access Requirements
 
 The permissions you need depend on what you are migrating. Use the table below to identify the minimum roles required for your scenario.
 
@@ -39,20 +53,6 @@ The permissions you need depend on what you are migrating. Use the table below t
 | Full server migration (all of the above) | Content Manager + System Administrator                          | Content Manager + System Administrator |
 
 > **Recommendation:** If you have administrative access, assign **Content Manager** (item-level) and **System Administrator** (site-level) roles on both the source and target report servers. This eliminates most permission-related errors and ensures all migration features work correctly.
-
-## Understanding SSRS Permissions
-
-SSRS uses two separate permission layers. Both must be configured correctly depending on what you are migrating.
-
-### Item-Level Roles (Folder / Report Level)
-
-Assigned at the **Home** folder or subfolder level in the SSRS Web Portal. These roles control access to reports, datasets, data sources, and subscriptions.
-
-| Role            | What it allows                                                                                                                        |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Browser         | View reports, folders, and shared datasets. Minimum role required for reading from the source server.                                 |
-| Publisher       | Deploy reports, datasets, and data sources to the target server.                                                                      |
-| Content Manager | Full control of items, including create, edit, delete, and manage security. Required for subscription migration on the target server. |
 
 ### Site-Level Roles (System Level)
 
