@@ -24,7 +24,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
 - **Command-Line Automation:** The wizard now includes a command-line utility (`SSRS.Reports.Migration.Wizard.exe`) enabling fully automated migrations. Supports all migration options including subscriptions, roles, parameters, folder mapping, and selective item migration via JSON. Ideal for scheduled and CI/CD-driven workflows.
 - **General Improvements:** Stability fixes and internal enhancements.
 
-## 🚀 Features at a Glance
+##  ✅ Features at a Glance
 
 - **Migrate Key SSRS Components**:
   - Folders
@@ -66,7 +66,7 @@ Whether you're upgrading SSRS servers, consolidating environments, or backing up
   - Export and recreate SSRS subscriptions
 
 - **Manage Folder Mapping**:
- - Rename or consolidate folders during the migration
+  - Rename or consolidate folders during the migration
 
 ---
 
