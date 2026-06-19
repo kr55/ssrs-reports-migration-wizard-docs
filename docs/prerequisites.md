@@ -24,37 +24,138 @@ Before using the SSRS Reports Migration Wizard, ensure the following system, net
 
 ## 🔗 Report Server Access Requirements
 
-🧑‍💼 **Required Roles**
-- On the **source server**, your user must have at least the `Browser` role.
-- On the **target server**, you need the `Publisher` role or higher.
+## Report Server Access Requirements
 
-> If connecting using domain credentials, ensure that:
-> - The domain account is trusted on the report server
-> - The password is valid and not expired
+The permissions you need depend on what you are migrating. Use the table below to identify the minimum roles required for your scenario.
 
-## 🔐 Granting Access to SSRS Report Server
+| What you're migrating                    | Source (minimum)                                                | Target (minimum)                       |
+| ---------------------------------------- | --------------------------------------------------------------- | -------------------------------------- |
+| Reports, folders, datasets, data sources | Browser                                                         | Publisher                              |
+| Subscriptions (standard)                 | Browser + System User                                           | Content Manager                        |
+| Data-driven subscriptions                | Browser + System User                                           | Content Manager                        |
+| Shared schedules                         | System User with schedule permissions (or System Administrator) | System Administrator                   |
+| Roles and permissions                    | System Administrator                                            | System Administrator                   |
+| Linked reports                           | Browser (on parent report folder)                               | Publisher                              |
+| Full server migration (all of the above) | Content Manager + System Administrator                          | Content Manager + System Administrator |
 
-If your user account is unable to connect or browse the server from the wizard, follow these steps to grant the required permissions:
+> **Recommendation:** If you have administrative access, assign **Content Manager** (item-level) and **System Administrator** (site-level) roles on both the source and target report servers. This eliminates most permission-related errors and ensures all migration features work correctly.
 
-### On the SSRS Web Portal (Report Manager):
+## Understanding SSRS Permissions
 
-1. Open your browser and navigate to the SSRS Web Portal (e.g.):http://<your-server>/Reports
-2. Click on the **gear icon** ⚙️ in the top-right corner and choose **Site Settings**.
-3. Under **Security**, select **Add group or user**.
-4. Enter your domain user name in this format:DOMAIN\username
-5. Assign appropriate role(s):
-- `Browser` – minimum required to view reports
-- `Publisher` – required to publish/upload reports and data sources
-- `Content Manager` – full access (if you’re managing everything)
-6. Click **OK** to save.
+SSRS uses two separate permission layers. Both must be configured correctly depending on what you are migrating.
 
-### On Folder-Level Permissions (if restricted):
+### Item-Level Roles (Folder / Report Level)
 
-1. Navigate to the top-level folder (usually **Home**).
-2. Click the **ellipsis (...)** next to the folder > **Manage** > **Security**.
-3. Add your domain user again and assign the necessary role(s).
-🔄 If inheritance is broken, ensure you set permissions for **each subfolder** as well.
+Assigned at the **Home** folder or subfolder level in the SSRS Web Portal. These roles control access to reports, datasets, data sources, and subscriptions.
 
+| Role            | What it allows                                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Browser         | View reports, folders, and shared datasets. Minimum role required for reading from the source server.                                 |
+| Publisher       | Deploy reports, datasets, and data sources to the target server.                                                                      |
+| Content Manager | Full control of items, including create, edit, delete, and manage security. Required for subscription migration on the target server. |
+
+### Site-Level Roles (System Level)
+
+Assigned under **Site Settings → Security** in the SSRS Web Portal. These roles are separate from folder-level permissions and are required for:
+
+* Retrieving or migrating shared schedules
+* Migrating security roles across servers
+* Accessing system-level metadata during migration
+
+| Role                 | What it allows                                                                               |
+| -------------------- | -------------------------------------------------------------------------------------------- |
+| System User          | View shared schedules and site properties. Minimum role required for subscription migration. |
+| System Administrator | Full system control. Required for role migration and shared schedule management.             |
+
+> ⚠️ **Important:** Missing site-level roles are the most common cause of HTTP 500 errors during migration. If the Migration Wizard returns a 500 error when retrieving shared schedules, verify that the account has the required site-level permissions.
+
+---
+
+## 🔐 How to Grant Item-Level Access (Folder Permissions)
+
+Use this procedure when migrating reports, datasets, data sources, or subscriptions.
+
+1. Open the SSRS Web Portal:
+
+   ```text
+   http://<servername>/Reports
+   ```
+
+2. Navigate to the **Home** folder (or the specific folder you need to migrate).
+
+3. Click the **ellipsis (...)** next to the folder and select **Manage → Security**.
+
+4. Click **Add group or user**.
+
+5. Enter the account in the following format:
+
+   ```text
+   DOMAIN\username
+   ```
+
+6. Assign the appropriate role from the table above.
+
+7. Click **OK** to save the changes.
+
+> 🔄 **Note:** If permission inheritance has been broken on subfolders, permissions must be assigned individually to each subfolder. The Migration Wizard can only access items that the connecting account has permission to read.
+
+---
+
+## 🔐 How to Grant Site-Level Access (System Permissions)
+
+Use this procedure when migrating shared schedules, subscriptions, or security roles.
+
+1. Open the SSRS Web Portal:
+
+   ```text
+   http://<servername>/Reports
+   ```
+
+2. Click the **Settings (⚙️)** icon in the upper-right corner and select **Site Settings**.
+
+3. Select **Security** from the left navigation pane.
+
+4. Click **Add group or user**.
+
+5. Enter the account in the following format:
+
+   ```text
+   DOMAIN\username
+   ```
+
+6. Assign the appropriate role:
+
+   * **System User** – Required for subscription and shared schedule migration.
+   * **System Administrator** – Required for role migration and advanced schedule management.
+
+7. Click **OK** to save the changes.
+
+---
+
+## Folder-Level Permissions (When Access Is Restricted)
+
+If access to the **Home** folder is restricted or inheritance has been broken:
+
+1. Navigate to the required top-level folder in the SSRS Web Portal.
+2. Click the **ellipsis (...)** next to the folder and select **Manage → Security**.
+3. Add the required domain account and assign the appropriate role.
+4. Repeat for each subfolder where inheritance has been disabled.
+
+---
+
+## Domain Credential Requirements
+
+* The account must be a valid domain account trusted by the report server. Local machine accounts are not supported.
+
+* Ensure the account password is valid and not expired. Expired credentials can cause silent connection failures.
+
+* If the Migration Wizard cannot connect, verify that the account can access the following URL directly in a browser:
+
+  ```text
+  http://<servername>/ReportServer
+  ```
+
+* When connecting across domains, ensure the account is explicitly trusted and authorized on the target report server.
 
 ## 🌐 How to Find the Report Server Web Service URL
 
