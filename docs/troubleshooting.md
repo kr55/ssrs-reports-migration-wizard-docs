@@ -78,6 +78,8 @@ This error is a security-related failure indicating that the **SSRS service cann
 
 **Error message:** Response status code does not indicate success: 500 (Internal Server Error)
 
+💡 This is a permissions issue, not a server crash. Despite the generic HTTP 500 response, this error occurs because the connecting account lacks site-level permissions on the source SSRS server. SSRS returns a 500 instead of a descriptive 403 when system-level access is denied. The fix is a one-time role assignment — no server restart or configuration change is required.
+
 ### **Typical Causes**
 
 This error occurs during migration when the wizard attempts to retrieve **shared schedules** from the source SQL Server Reporting Services (SSRS) instance. Shared schedules are **system-level objects** within SSRS, and accessing them requires permissions at the **site level**, not just at the folder or report level.
