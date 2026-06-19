@@ -34,7 +34,7 @@ Click **Next** to continue.
 
 ## Select SSRS Items to Migrate
 
-- Browse and select specific SSRS objects (folders, reports, datasets, data sources).
+- Browse and select specific SSRS objects (folders, reports, linked reports, datasets, data sources).
 - The tool displays a **tree view** of your SSRS folder hierarchy.
 - You can preview object counts by type on the right panel.
 
@@ -197,7 +197,7 @@ Once the credentials are entered, the wizard will apply them automatically while
 ### Before You Migrate (Checklist)
 - Selected source and target correctly
 - Chosen all intended SSRS items (reports, data sources, datasets, subscriptions)
-- (Optional – BETA) Updated connection strings and provided credentials, if necessary
+- (Optional) Updated connection strings and provided credentials, if necessary
 - Reviewed migration summary for “New” vs “Update” items  
 
 <img src="../media/review.png" style="width:75%; height:75%">
