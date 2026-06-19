@@ -22,6 +22,43 @@ Before using the SSRS Reports Migration Wizard, ensure the following system, net
 - `http://<servername>/ReportServer`
 - `http://<servername>/Reports`
 
+## 🌐 How to Find the Report Server Web Service URL
+
+To connect to your SSRS source or target environment using **SSRS Reports Migration Wizard**, you will need the **Report Server Web Service URL**. Follow the steps below to locate it.
+
+### Using Report Server Configuration Manager
+
+1. Launch **Report Server Configuration Manager** on the machine where SSRS is installed.
+2. Connect to the appropriate SSRS instance.
+3. Click on **Web Service URL** in the left-hand menu.
+4. The full URL will be displayed under **Report Server Web Service URLs**.
+   - Example: `http://<your-server-name>/reportserver`
+5. Copy and use this URL in the wizard when prompted.
+
+<img src="../media/RSConfigurationManager.png" width="700">
+
+### If You Don’t Have Access to Configuration Manager
+
+Try accessing the default SSRS URL directly in your browser:
+
+- `http://localhost/reportserver`
+- or `http://<your-server-name>/reportserver`
+
+If SSRS is properly installed and running, this will open the Report Server endpoint.
+
+### For HTTPS-Enabled Servers
+
+If your SSRS instance is configured with SSL, the URL will begin with `https://`:
+
+- Example: `https://reports.yourdomain.com/reportserver`
+
+You can verify or update the SSL binding in the **Web Service URL** tab of the Configuration Manager.
+
+### Optional: Check RSReportServer.config
+
+The Web Service URL can also be located in the `RSReportServer.config` file at:  `C:\Program Files\Microsoft SQL Server\Reporting Services\ReportServer\`
+Look for the `<UrlRoot>` tag to confirm the configured endpoint (if it exists).
+
 
 ## Understanding SSRS Permissions
 
@@ -153,43 +190,6 @@ Use this procedure when migrating shared schedules, subscriptions, or security r
 7. Click **OK** to save the changes.
 
 ---
-
-## 🌐 How to Find the Report Server Web Service URL
-
-To connect to your SSRS source or target environment using **SSRS Reports Migration Wizard**, you will need the **Report Server Web Service URL**. Follow the steps below to locate it.
-
-### Using Report Server Configuration Manager
-
-1. Launch **Report Server Configuration Manager** on the machine where SSRS is installed.
-2. Connect to the appropriate SSRS instance.
-3. Click on **Web Service URL** in the left-hand menu.
-4. The full URL will be displayed under **Report Server Web Service URLs**.
-   - Example: `http://<your-server-name>/reportserver`
-5. Copy and use this URL in the wizard when prompted.
-
-<img src="../media/RSConfigurationManager.png" width="700">
-
-### If You Don’t Have Access to Configuration Manager
-
-Try accessing the default SSRS URL directly in your browser:
-
-- `http://localhost/reportserver`
-- or `http://<your-server-name>/reportserver`
-
-If SSRS is properly installed and running, this will open the Report Server endpoint.
-
-### For HTTPS-Enabled Servers
-
-If your SSRS instance is configured with SSL, the URL will begin with `https://`:
-
-- Example: `https://reports.yourdomain.com/reportserver`
-
-You can verify or update the SSL binding in the **Web Service URL** tab of the Configuration Manager.
-
-### Optional: Check RSReportServer.config
-
-The Web Service URL can also be located in the `RSReportServer.config` file at:  `C:\Program Files\Microsoft SQL Server\Reporting Services\ReportServer\`
-Look for the `<UrlRoot>` tag to confirm the configured endpoint (if it exists).
 
 
 ## Next Step
