@@ -11,6 +11,15 @@ With the SSRS Reports Migration Wizard (SRMW) command-line utility, you can auto
 
 <img src="../media/automation-cli.gif" width="700">
 
+## Generate Scripts from the Wizard UI
+
+The easiest way to get started with command-line automation is to use the **Script** button on the **Review and Confirm** screen of the wizard. It automatically generates a ready-to-run command-line script based on your current wizard selections — no manual parameter writing required.
+
+- Click **Script → Copy to Clipboard** to paste directly into a terminal or scheduler.
+- Click **Script → Save to File** to save as a `.bat` file for scheduled or repeated use.
+
+The generated script can then be scheduled using Windows Task Scheduler or integrated into a CI/CD pipeline. See [Getting Started → Review and Confirm](https://ssrsmigrationwizard.azureops.org/getting-started/#review-and-confirm) for details.
+
 ## Before You Begin
 
 Before running the command-line utility, you need to make the executable accessible from any command prompt location. You can do this in one of two ways:
