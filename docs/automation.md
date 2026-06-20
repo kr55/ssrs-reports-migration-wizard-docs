@@ -114,7 +114,9 @@ Supported `Type` values: `Folder`, `Report`, `LinkedReport`, `DataSource`, `Data
 
 ## Usage examples
 
-Add the folder path of `SSRS.Reports.Migration.Wizard.exe` to the Windows system environment variable `Path`. Alternatively, specify the full path of the executable in the command prompt.
+The quickest way to get a valid command-line script is to run the wizard once and click **Script → Copy to Clipboard** on the Review and Confirm screen. This generates the correct syntax automatically based on your selections.
+
+If you prefer to write scripts manually, add the folder path of `SSRS.Reports.Migration.Wizard.exe` to the Windows system environment variable `Path`, or specify the full path of the executable in each command. See [Before You Begin](#before-you-begin) for setup instructions.
 
 ---
 
