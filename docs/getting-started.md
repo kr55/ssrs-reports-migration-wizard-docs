@@ -198,7 +198,23 @@ Once the credentials are entered, the wizard will apply them automatically while
 - Selected source and target correctly
 - Chosen all intended SSRS items (reports, data sources, datasets, subscriptions)
 - (Optional) Updated connection strings and provided credentials, if necessary
-- Reviewed migration summary for “New” vs “Update” items  
+- Reviewed migration summary for “New” vs “Update” items
+
+### Script Button
+
+Before clicking **Finish**, you can generate a ready-to-run command-line script based on your current wizard selections using the **Script** button.
+
+Click the **Script** button to reveal two options:
+
+- **Copy to Clipboard** — Copies the generated command-line script to your clipboard so you can paste it directly into a terminal, Task Scheduler job, or CI/CD pipeline configuration.
+- **Save to File** — Saves the script as a `.bat` file to a location of your choice.
+
+The generated script includes all your current wizard selections — source, target, selected items, folder mapping, and migration options — so you can rerun the same migration later without going through the wizard again.
+
+{: .note }
+>  For security reasons, passwords are never included in the generated script. Replace `<source_password>` and `<target_password>` placeholders with your actual credentials before running the script. Where possible, consider using Windows Authentication to avoid storing passwords in script files entirely.
+
+👉 See the [Automation & Command-Line Reference](https://ssrsmigrationwizard.azureops.org/automation/) for full parameter documentation and usage examples.
 
 <img src="../media/review.png" style="width:75%; height:75%">
 
@@ -213,14 +229,6 @@ Click **Finish** to start the migration process.
 
 <img src="../media/finish.png" style="width:75%; height:75%">
 
-## Automate with Command Line (Preview)
-
-Prefer to automate migrations without the wizard UI? The SSRS Reports Migration Wizard includes a built-in command-line utility that supports all the same migration options — subscriptions, roles, parameters, folder mapping, and selective item migration.
-
-```powershell
-SSRS.Reports.Migration.Wizard.exe /st:0 /ssn:http://SourceServer/ReportServer /tt:0 /tsn:http://TargetServer/ReportServer /ms:true /mr:true /mp:true /lfd:"D:\Logs"
-```
-See the full [Automation & Command-Line Reference](https://ssrsmigrationwizard.azureops.org/automation/) for all parameters and usage examples.
 
 ## Glossary of Terms
 
