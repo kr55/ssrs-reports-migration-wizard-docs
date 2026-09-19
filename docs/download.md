@@ -3,6 +3,7 @@ layout: page
 title: Installation
 permalink: /download/
 nav_order: 4
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/download/"
 ---
 
 # Installation and Activation
