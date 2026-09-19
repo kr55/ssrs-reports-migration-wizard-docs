@@ -3,6 +3,7 @@ layout: page
 title: More from AzureOps
 permalink: /more-tools/
 nav_order: 10
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/home/"
 ---
 
 # More Tools by AzureOps
