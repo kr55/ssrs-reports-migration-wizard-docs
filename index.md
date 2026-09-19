@@ -4,7 +4,6 @@ layout: home
 nav_order: 1
 redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/home/"
 ---
-
 # SSRS Reports Migration Wizard
 
 SSRS Reports Migration Wizard helps you migrate SQL Server Reporting Services (SSRS Native mode) or Power BI Report Server content seamlessly from one server to another.
