@@ -3,6 +3,7 @@ layout: page
 title: Demo
 permalink: /demo/
 nav_order: 6
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/demo/"
 ---
 
 # Demo
