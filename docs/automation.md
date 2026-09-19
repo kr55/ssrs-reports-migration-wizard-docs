@@ -3,6 +3,7 @@ layout: page
 title: Automation (Preview)
 permalink: /automation/
 nav_order: 7
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/automation/"
 ---
 
 # Automation (Preview)
