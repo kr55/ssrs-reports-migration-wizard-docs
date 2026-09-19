@@ -3,6 +3,7 @@ layout: default
 title: Release notes
 permalink: /release-notes/
 nav_order: 9
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/release-notes/"
 ---
 
 # Release Notes
