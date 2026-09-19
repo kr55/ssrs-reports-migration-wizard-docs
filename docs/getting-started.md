@@ -3,6 +3,7 @@ layout: page
 title: Getting started
 permalink: /getting-started/
 nav_order: 5
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/getting-started/"
 ---
 
 # Getting Started
