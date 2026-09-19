@@ -4,6 +4,7 @@ title: Security & Compliance
 nav_order: 3
 permalink: /security-compliance/
 has_children: false
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/security-compliance/"
 ---
 # Security & Compliance
 
