@@ -3,6 +3,7 @@ layout: page
 title: Troubleshooting guide
 permalink: /troubleshooting/
 nav_order: 8
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/troubleshooting/"
 ---
 
 # Troubleshooting Guide
