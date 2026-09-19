@@ -2,7 +2,7 @@
 title: Home
 layout: home
 nav_order: 1
-redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/home/
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/home/"
 ---
 
 
