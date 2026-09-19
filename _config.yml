@@ -2,6 +2,9 @@ title: SSRS Reports Migration Wizard
 description: Manage SSRS reports from one server to another.
 theme: just-the-docs
 
+plugins:
+  - jekyll-redirect-from
+
 url: https://ssrsmigrationwizard.azureops.org
 
 aux_links:
