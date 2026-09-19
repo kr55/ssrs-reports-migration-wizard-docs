@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page moved</title>
+</head>
+<body>
+  <p id="msg">This documentation has moved. Redirecting…</p>
+  <script>
+    var path = window.location.pathname.toLowerCase();
+    var map = {
+      "prerequisites": "prerequisites",
+      "getting-started": "getting-started",
+      "download": "download",
+      "automation": "automation",
+      "troubleshooting": "troubleshooting",
+      "security-compliance": "security-compliance",
+      "demo": "demo",
+      "release-notes": "release-notes"
+    };
+    var dest = "https://azureops.org/docs/ssrs-reports-migration-wizard/home/";
+    for (var key in map) {
+      if (path.indexOf(key) !== -1) {
+        dest = "https://azureops.org/docs/ssrs-reports-migration-wizard/" + map[key] + "/";
+        break;
+      }
+    }
+    window.location.replace(dest);
+  </script>
+  <noscript>
+    <p>Please visit <a href="https://azureops.org/docs/ssrs-reports-migration-wizard/home/">the new documentation</a>.</p>
+  </noscript>
+</body>
+</html>
