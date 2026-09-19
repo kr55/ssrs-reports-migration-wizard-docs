@@ -4,6 +4,7 @@ title: Prerequisites
 nav_order: 2
 has_children: false
 permalink: /prerequisites/
+redirect_to: "https://azureops.org/docs/ssrs-reports-migration-wizard/prerequisites/"
 ---
 # Prerequisites
 
